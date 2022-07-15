@@ -9,6 +9,7 @@ const Index = () => {
 	useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
 	return (
 		<div ref={scrollRef}>
+			
 			<Section />
 			<Section2 />
 			<Section3 />

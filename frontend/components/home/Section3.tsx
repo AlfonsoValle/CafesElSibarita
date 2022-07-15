@@ -7,7 +7,7 @@ const Section3 = () => {
 			css={css`
 				height: 100vh;
 				width: 99vw;
-				background-image: url("/images/model_X.jpg");
+				background-image: url("/images/fondocafe.jpg");
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center;

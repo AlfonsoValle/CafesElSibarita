@@ -20,7 +20,7 @@ const Hero: React.FC<NameDescription> = ({ name, description }) => {
 		>
 			<div
          css={css`
-        font-size: 90px;
+        font-size: 40px;
         font-weight: 500;
         
       `}
