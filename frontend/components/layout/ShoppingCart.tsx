@@ -12,12 +12,9 @@ const ShoppingCart = () => {
 				cursor: pointer;
 			`}
 		>
-			<a><Image src="/images/coffee-bag-svgrepo-com.svg" width="43px" height="48px" />
-			
-			
-			
+			<a>
+				<Image src="/images/coffee-bag-svgrepo-com.svg" width="43px" height="48px" />
 			</a>
-
 		</div>
 	);
 };

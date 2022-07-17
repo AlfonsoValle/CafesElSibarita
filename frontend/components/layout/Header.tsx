@@ -15,7 +15,6 @@ export const Header = () => {
 			>
 				<div
 					css={css`
-						
 						display: grid;
 						grid-template-columns: 1fr 2.5fr 15fr;
 						align-items: center;

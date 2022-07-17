@@ -7,7 +7,6 @@ injectGlobal`
     body{
 		background: #20161e;
   font-family: 'Sirin Stencil', sans-serif;
-  
   font-weight: 400;
   line-height: 1;
   color: #ffffff;

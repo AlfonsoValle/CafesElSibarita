@@ -9,20 +9,14 @@ const Prime: React.FC<NameDescription> = ({ name, description }) => {
 	return (
 		<section
 			css={css`
+				min-width: 0%;
+				width: 50%;
 				background-color: #eda543;
-				z-index: 1;
-				position: absolute;
-				width: 30.5%;
-				margin-left: 20%;
 				border: 5px solid #eaecebc5;
-				
 				border-right: 0px;
 				padding-bottom: 9px;
-				border-radius: 0px 50px 0px 50px;
-				
+				border-radius: 0px 0px 0px 50px;
 				clip-path: polygon(0% 0%, 91% 0, 100% 50%, 91% 100%, 0% 100%);
-				height: 10%;
-				margin-top: 14%;
 			`}
 		>
 			<div
