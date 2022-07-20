@@ -23,8 +23,8 @@ const MainBanner: React.FC<Intro> = ({ intro }) => {
 				css={css`
 					padding-left: 2%;
 					padding-right: 2%;
-					padding-top: 2%;
-					padding-bottom: 2%;
+					padding-top: 1%;
+					padding-bottom: 1%;
 					font-size: 20px;
 					color: #dad8d3;
 					font-weight: 500;

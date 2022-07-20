@@ -5,7 +5,7 @@ import { injectGlobal } from "@emotion/css";
 injectGlobal`
     @import url('https://fonts.googleapis.com/css?family=Sirin+Stencil:400');
     body{
-		background: #20161e;
+	
   font-family: 'Sirin Stencil', sans-serif;
   font-weight: 400;
   line-height: 1;

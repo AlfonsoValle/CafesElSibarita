@@ -8,7 +8,7 @@ export const Header = () => {
 		<>
 			<div
 				css={css`
-					background: var(--main-color);
+					
 					position: fixed;
 					z-index: 2;
 				`}
