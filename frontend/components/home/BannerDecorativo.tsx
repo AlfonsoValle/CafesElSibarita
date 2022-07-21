@@ -4,15 +4,9 @@ const BannerDecorativo = () => {
 	return (
 		<section
 			css={css`
-				border-radius: 99px;
-				height: 20vh;
-				max-width: 15%;
-				border: 5px solid #eaeceb;
 				display: flex;
-				overflow: hidden;
-				opacity: 0.95;
-				filter: brightness(70%);
-				justify-content: center;
+				
+				filter: brightness(99%);
 			`}
 		>
 			<img src="/images/cafetera.jpg" alt="" />

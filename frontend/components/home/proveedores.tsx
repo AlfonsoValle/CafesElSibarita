@@ -10,21 +10,18 @@ const Proveedores: React.FC<NameUrlImage> = ({ name, url, image }) => {
 	return (
 		<button
 			css={css`
-				background-color: #eda543;
+				background-color: #1E4924;
 				border: 1px transparent;
-            
-           
+				
+				
 			`}
 		>
 			<div
 				css={css`
-					font-family: "montserrat-bold", sans-serif;
+				
+				font-family: "montserrat";
 					font-size: 12px;
-					font-weight: 800;
-					font-style: bold;
-					color: #141310;
-					font-weight: 500;
-					
+					color: #ffffff;
 				`}
 			>
 				{name}

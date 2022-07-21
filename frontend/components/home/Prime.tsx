@@ -11,8 +11,10 @@ const Prime: React.FC<NameDescription> = ({ name, description }) => {
 			css={css`
 				min-width: 0%;
 				width: 50%;
-				background-color: #eda543;
-				border: 5px solid #eaecebc5;
+				font-family: "montserrat", sans-serif;
+				font-style: italic;
+				background-color: #1E4924;
+				border: 2px solid #eaecebc5;
 				border-right: 0px;
 				padding-bottom: 9px;
 				border-radius: 0px 0px 0px 50px;
@@ -35,6 +37,7 @@ const Prime: React.FC<NameDescription> = ({ name, description }) => {
 					padding-right: 5%;
 					padding-left: 5%;
 					padding-top: 1.5%;
+					font-weight: 500;
 				`}
 			>
 				{description}

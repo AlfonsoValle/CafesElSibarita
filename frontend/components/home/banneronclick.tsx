@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import CuboProveedores from "./cuboproveedores";
+import CuboProveedores from "./Cuboproveedores";
 
 const BanneronClick: React.FC = () => {
 	return (
@@ -9,7 +9,7 @@ const BanneronClick: React.FC = () => {
 				
 				
 				margin-top: 1%;
-				width: 85%;
+				width: 50%;
 				display: flex;
 				justify-content: center;
 				align-items: center;

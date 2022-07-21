@@ -8,19 +8,15 @@ export const HeaderButton = ({ children, href }) => {
 				align-content: center;
 				color: #f0ebe7;
 				font-weight: 400;
-				font-family: "Sirin Stencil", sans-serif;
+				font-family: Montserrat, sans-serif;
 				font-size: 25px;
-				height: 50px;
-				padding-bottom: 3px;
-				padding-left: 20px;
-				padding-right: 22px;
-				border-radius: 24px;
-				border-radius: 10px 10px 50px 50px;
+				height: 30px;
+				border-radius: 50px 50px 50px 50px;
 				text-decoration: none;
-				border: 2px solid #eaecebc5;
-				background-color: #645541b7;
+				border: 1px solid #eaecebc5;
+				background-color:#251721;
 				:hover {
-					background-color: #eda543;
+					background-color: #eda6439d;
 				}
 
 				justify-content: center;

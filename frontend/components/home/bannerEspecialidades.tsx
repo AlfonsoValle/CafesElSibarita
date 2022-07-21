@@ -1,8 +1,8 @@
 import { css } from "@emotion/react";
-import Especialidades from "./especialidades";
+import Especialidades from "./Especialidades";
 
 interface Banderas {
-	pais: string;
+	pais?: string;
 }
 
 //create array with contry names;
@@ -41,22 +41,25 @@ const BannerEspecialidades: React.FC<Banderas> = ({ pais }) => {
 			className="bannerEspecialidades"
 			css={css`
 				display: flex;
-				align-items: center;
+				
+							
+							
 			`}
 		>
 			<div
 				css={css`
 					display: flex;
-               
+					
+							
+							
+							
+							
+						
 				`}
 			>
 				<Especialidades
 					name="Honduras"
-					text="El 'snippet' o fragmento de código viene a ser al desarrollador de software lo que el ladrillo es al albañil. Bueno, más o menos. 
-
-Pero, ¿qué herramientas tenemos a nuestra disposición para ello? Hoy te traemos cuatro de ellas, todas gratuitas o freemium, que cubren un amplio espectro de necesidades"
-
-
+					text="El café de HONDURAS es famoso por su contundente aroma, cosechado en las famosas planicies de la región, cabe destacar sus tonos de sabor afrutados, algo amargos y su efecto contundente a la hora despertarnos de buena mañana."
 					image={`https://countryflagsapi.com/svg/HN`}
 				/>
 				<Especialidades
