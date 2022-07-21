@@ -13,7 +13,8 @@ const Prime: React.FC<NameDescription> = ({ name, description }) => {
 				width: 50%;
 				font-family: "montserrat", sans-serif;
 				font-style: italic;
-				background-color: #1E4924;
+				color: #fefefe;
+				background: linear-gradient(90deg, rgba(30, 73, 36, 1) 70%, #006d0f 100%);
 				border: 2px solid #eaecebc5;
 				border-right: 0px;
 				padding-bottom: 9px;
@@ -24,7 +25,7 @@ const Prime: React.FC<NameDescription> = ({ name, description }) => {
 			<div
 				css={css`
 					font-size: 40px;
-					color: #faf9f7;
+					color: #ffffff;
 					font-weight: 500;
 				`}
 			>

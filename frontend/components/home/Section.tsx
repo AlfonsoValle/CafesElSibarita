@@ -33,13 +33,14 @@ const Section = () => {
 						display: flex;
 						align-items: center;
 						justify-content: center;
-						font-size: 20px;
+						
 					`}
 				>
 					<div
 						css={css`
 							min-width: 60%;
 							width: 95%;
+						
 						`}
 					>
 						<MainBanner intro="Un servicio de Premium de entrega de café a Domicilio, la cantidad justa, con la frescura garantizada. Café de Especialidad, traído desde cada rincón del mundo,pero tostado artesanalmente por los mejores proveedores de España. El mejor sabor y aroma a un clic de distancia." />
@@ -51,11 +52,11 @@ const Section = () => {
 						>
 							<Prime
 								name="Suscripción Prime"
-								description="Dos variedades diferentes al mes, rotando todo el año. En tu puerta cada 15 días. "
+								description="Sólo tu Café Favorito, de tu proveedor favorito. Cada 15 días en casa. "
 							/>
 							<Sibarita
 								name="Suscripción Sibarita"
-								description="Sólo tu Café Favorito, de tu proveedor favorito. Cada 15 días en casa. "
+								description="Dos variedades diferentes al mes, rotando todo el año. En tu puerta cada 15 días. "
 							/>
 						</div>
 
