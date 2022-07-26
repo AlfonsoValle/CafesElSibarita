@@ -13,26 +13,21 @@ export const Login = () => {
 			`}
 		>
 			{!user && (
-				<button
+				<span
 					onClick={() => loginWithRedirect()}
 					css={css`
 						display: flex;
 						align-content: center;
 						color: #f0ebe7;
 						font-weight: 400;
-						font-family: "Sirin Stencil", sans-serif;
+						font-family: "Montserrat", sans-serif;
 						font-size: 18px;
-						padding-bottom: 2px;
-						padding-left: 2.5;
-						padding-right: 2.5;
-						border-radius: 3px;
-						border-radius: 24px;
+
 						text-decoration: none;
-						border: 1px solid #eaecebc5;
-						background-color: #251721;
+
 						margin-right: 10px;
 						:hover {
-							background-color: #eda6439d;
+							color: #eda543;
 						}
 
 						justify-content: center;
@@ -43,7 +38,7 @@ export const Login = () => {
 					`}
 				>
 					Identifícate
-				</button>
+				</span>
 			)}
 			{user && (
 				<div
@@ -100,7 +95,7 @@ export const Login = () => {
 							border-radius: 70px 0px 0px 10px;
 							text-decoration: none;
 							border: 2px solid #eaecebc5;
-							background-color:#7b4e118d;
+							background-color: #7b4e118d;
 
 							justify-content: center;
 							align-items: center;

@@ -20,6 +20,7 @@ const Prime: React.FC<NameDescription> = ({ name, description }) => {
 				padding-bottom: 9px;
 				border-radius: 0px 0px 0px 50px;
 				clip-path: polygon(0% 0%, 91% 0, 100% 50%, 91% 100%, 0% 100%);
+				cursor: pointer;
 			`}
 		>
 			<div

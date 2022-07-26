@@ -1169,6 +1169,11 @@ scheduler@^0.23.0:
   dependencies:
     loose-envify "^1.1.0"
 
+shopify-buy@^2.16.1:
+  version "2.16.1"
+  resolved "https://registry.yarnpkg.com/shopify-buy/-/shopify-buy-2.16.1.tgz#d5062813df68fe39a6579a8da07bd6a4fdce5a13"
+  integrity sha512-I+4pmFgYpQ8N3yaqNw/5fWu+e7AuiUIrQdDLPtD0SwEzL1EyB4q2Ge+MSHQmrAaZFiDXKHAkfzpkYExztquaDw==
+
 source-map-js@^1.0.1, source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"

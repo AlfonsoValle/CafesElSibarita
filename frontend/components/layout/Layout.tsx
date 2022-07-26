@@ -1,6 +1,7 @@
 import { Header } from "./Header";
 import { css } from "@emotion/react";
 import { injectGlobal } from "@emotion/css";
+import { Footer } from "./Footer";
 
 injectGlobal`
     @import url('https://fonts.googleapis.com/css?family=Sirin+Stencil:400');
@@ -25,6 +26,7 @@ export const Layout = ({ children }) => (
 	<div css={css``}>
 		<div>
 			<Header />
+			<Footer />
 			<div
 				css={css`
 					max-width: 100vw;

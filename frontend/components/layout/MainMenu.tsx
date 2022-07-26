@@ -1,6 +1,7 @@
 import { HeaderButton } from "./HeaderButton";
 import { css } from "@emotion/react";
 
+
 export const MainMenu = () => {
 	return (
 		<div
@@ -8,7 +9,7 @@ export const MainMenu = () => {
 				white-space: nowrap;
 			`}
 		>
-			<HeaderButton href="/">Cafés El Sibarita</HeaderButton>
+			<HeaderButton href="/" text="Cafés el Sibarita"></HeaderButton>
 		</div>
 	);
 };

@@ -33,17 +33,15 @@ const Section = () => {
 						display: flex;
 						align-items: center;
 						justify-content: center;
-						
 					`}
 				>
 					<div
 						css={css`
 							min-width: 60%;
 							width: 95%;
-						
 						`}
 					>
-						<MainBanner intro="Un servicio de Premium de entrega de café a Domicilio, la cantidad justa, con la frescura garantizada. Café de Especialidad, traído desde cada rincón del mundo,pero tostado artesanalmente por los mejores proveedores de España. El mejor sabor y aroma a un clic de distancia." />
+						<MainBanner intro="Un servicio de Premium de entrega de café a Domicilio, la cantidad justa, con la frescura garantizada. Café de Especialidad, traído desde cada rincón del mundo pero tostado artesanalmente por los mejores proveedores de España. El mejor sabor y aroma a un clic de distancia." />
 
 						<div
 							css={css`
@@ -57,6 +55,7 @@ const Section = () => {
 							<Sibarita
 								name="Suscripción Sibarita"
 								description="Dos variedades diferentes al mes, rotando todo el año. En tu puerta cada 15 días. "
+								
 							/>
 						</div>
 
@@ -92,7 +91,7 @@ const Section = () => {
 										border: 2px solid #eaecebc5;
 										background-color: #251721;
 										border-radius: 24px;
-										margin-top: 20px;
+										margin-top: 60px;
 									`}
 								>
 									Nuestras Especialidades

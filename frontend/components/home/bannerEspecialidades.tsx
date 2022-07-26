@@ -41,7 +41,7 @@ const BannerEspecialidades: React.FC<Banderas> = ({ pais }) => {
 			className="bannerEspecialidades"
 			css={css`
 				display: flex;
-				
+				margin-top: 8px;
 							
 							
 			`}

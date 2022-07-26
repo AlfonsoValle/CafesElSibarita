@@ -1,11 +1,11 @@
 import { css } from "@emotion/react";
 
-interface NameDescription {
+interface NameDescriptionRoute {
 	name: string;
 	description: string;
 }
 
-const Sibarita: React.FC<NameDescription> = ({ name, description }) => {
+const Sibarita: React.FC<NameDescriptionRoute> = ({ name, description }) => {
 	return (
 		<section
 			css={css`
@@ -13,7 +13,7 @@ const Sibarita: React.FC<NameDescription> = ({ name, description }) => {
 				font-style: italic;
 				min-width: 0%;
 				width: 50%;
-
+				cursor: pointer;
 				background: linear-gradient(
 					90deg,
 					rgba(231, 178, 21, 1) 0%,
