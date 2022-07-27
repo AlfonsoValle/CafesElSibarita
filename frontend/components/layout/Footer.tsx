@@ -7,13 +7,11 @@ export const Footer = () => {
 		<>
 			<div
 				css={css`
-					margin-top: 93vh;
+					margin-top: 94vh;
 					position: absolute;
 					display: flex;
-					align-items: center;
-
 					justify-content: end;
-					width: 100vw;
+					width: 100%;
 				`}
 			>
 				<div

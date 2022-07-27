@@ -26,10 +26,14 @@ export const Layout = ({ children }) => (
 	<div css={css``}>
 		<div>
 			<Header />
-			<Footer />
+			<div css={css``}>
+				<Footer />
+			</div>
 			<div
 				css={css`
-					max-width: 100vw;
+					//max-width: 100vw;
+					//max-height: 100vh;
+					display: flex;
 					margin: 0;
 					text-align: center;
 				`}

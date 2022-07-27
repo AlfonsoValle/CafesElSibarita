@@ -14,7 +14,7 @@ export const CoffeeCard: React.FC<{ coffee: Coffee }> = ({ coffee }) => {
 			className="card"
 			css={css`
 				color: black;
-            font-size: 10px;
+				font-size: 10px;
 				height: 100px;
 				display: flex;
 				align-items: center;
@@ -24,7 +24,6 @@ export const CoffeeCard: React.FC<{ coffee: Coffee }> = ({ coffee }) => {
 				text-align: center;
 				border-radius: 25px;
 				background-color: #c5c5d3;
-				
 			`}
 		>
 			<div className="card-image" css={css``}>

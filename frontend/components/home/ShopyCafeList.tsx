@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { css } from "@emotion/react";
 
 export const CafeList = () => {
-	const [cafe_data, setCafeData]: any[] = useState([]);
+	const [cafe_data, setCafeData]: any = useState([]);
 	useEffect(() => {
 		axios.get("http://localhost:5000/sibarita").then((res) => {
 			setCafeData(res.data.data.products.edges[0].node);
@@ -28,12 +28,10 @@ export const CafeList = () => {
 				color: #cf2525;
 			`}
 		>
-			{/* {cafe_data.edges.map((cafe, index) => (
-				<CafeCard cafe={cafe} key={index} />
-			))} */}
-         
-				<CafeCard cafe={cafe_data}  />
-			
+			{cafe_data.length > 0 &&
+				cafe_data.map((cafe, index) => <CafeCard cafe={cafe} key={index} />)}
+
+			{/* <CafeCard cafe={cafe_data} /> */}
 		</div>
 	);
 };

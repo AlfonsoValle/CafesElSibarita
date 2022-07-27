@@ -9,7 +9,7 @@ const MainBanner: React.FC<Intro> = ({ intro }) => {
 		<section
 			css={css`
 				font-family: "montserrat", sans-serif;
-				font-size: 26px;
+				font-size: 30px;
 				background: linear-gradient(
 					180deg,
 					rgba(186, 158, 113, 1) 0%,
@@ -19,9 +19,9 @@ const MainBanner: React.FC<Intro> = ({ intro }) => {
 				border: 2px solid #eaecebc5;
 				border-bottom: 0px;
 				border-radius: 50px 50px 0px 0px;
-				margin-top: 14vh;
+				margin-top: 8vh;
 				overflow: hidden;
-				height: 100px;
+				min-height: 100px;
 			`}
 		>
 			<BannerDecorativo />

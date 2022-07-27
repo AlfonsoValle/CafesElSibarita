@@ -14,21 +14,13 @@ const CuboProveedores: React.FC = () => {
 						layout="position"
 						css={css`
 							font-family: "montserrat", sans-serif;
-							font-size: 18px;
-							display: flex;
-							justify-content: center;
-							align-items: center;
 							background-color: #251721;
 							border: 3px solid #eaecebc5;
 							border-radius: 24px;
-							padding: 20px 75px 20px 75px;
-							text-align: center;
+							padding: 10px 10px 10px 10px;
 							cursor: pointer;
-							width: 50%;
 							white-space: nowrap;
-							display: flex;
-							justify-content: center;
-							align-items: center;
+
 							:hover {
 								transform: scale(1.1);
 							}
@@ -43,15 +35,10 @@ const CuboProveedores: React.FC = () => {
 					onClick={() => setIsOpen(!isOpen)}
 					css={css`
 						display: flex;
-						color: white;
-						text-align: center;
-						align-items: center;
-						margin-top: 20px;
 						background-color: #1e4924;
 						border: 3px solid #eaecebc5;
 						border-radius: 24px;
-						text-align: center;
-						padding: 5px;
+						padding: 2px;
 						cursor: pointer;
 						overflow: hidden;
 					`}
@@ -60,10 +47,7 @@ const CuboProveedores: React.FC = () => {
 						css={css`
 							display: flex;
 							flex-wrap: wrap;
-							gap: 10px;
 							justify-content: center;
-							text-align: center;
-							color: white;
 						`}
 					>
 						<Proveedores

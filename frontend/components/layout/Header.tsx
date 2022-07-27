@@ -1,6 +1,5 @@
 import { css } from "@emotion/react";
 import { MainMenu } from "./MainMenu";
-import Loguito from "./Logo";
 import { LateralMenu } from "./LateralMenu";
 
 export const Header = () => {
@@ -8,20 +7,22 @@ export const Header = () => {
 		<>
 			<div
 				css={css`
-					
+					display: flex;
+					justify-content: space-between;
+					width: 100%;
+					align-items: center;
 					position: fixed;
 					z-index: 2;
 				`}
 			>
+				{" "}
+				<MainMenu />
 				<div
 					css={css`
-						display: grid;
-						grid-template-columns: 1fr 2.5fr 15fr;
-						align-items: center;
+						margin-right: 5px;
 					`}
 				>
-					<Loguito />
-					<MainMenu />
+					{" "}
 					<LateralMenu />
 				</div>
 			</div>

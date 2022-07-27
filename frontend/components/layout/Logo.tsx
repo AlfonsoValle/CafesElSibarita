@@ -4,13 +4,11 @@ const Loguito = () => {
 	return (
 		<div
 			css={css`
-				display: flex;
-				justify-content: flex-start;
-				margin-left: 10px;
+				margin-left: 5px;
 				margin-top: 5px;
 			`}
 		>
-			<Image src="/images/logoSibarita.png" width="80px" height="80px" />
+			<Image src="/images/logoSibarita.png" width="60px" height="60px" />
 		</div>
 	);
 };

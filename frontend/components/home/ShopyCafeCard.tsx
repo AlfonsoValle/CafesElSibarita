@@ -25,7 +25,8 @@ export const CafeCard: React.FC<{ cafe }> = ({ cafe }) => {
 			<div className="card-content">
 				<h2>{cafe.title}</h2>
 				<h2>{cafe.handle}</h2>
-				<h4>{cafe.priceRange.minVariantPrice.amount}</h4>
+				<img src={cafe.images.edges[0].node.transformedSrc}/>
+				<h4>{cafe.priceRange.minVariantPrice.amount}</h4> 
 			</div>
 		</div>
 	);

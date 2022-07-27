@@ -37,7 +37,8 @@ const Section = () => {
 				>
 					<div
 						css={css`
-							min-width: 60%;
+							min-width: 90%;
+
 							width: 95%;
 						`}
 					>
@@ -55,24 +56,24 @@ const Section = () => {
 							<Sibarita
 								name="Suscripción Sibarita"
 								description="Dos variedades diferentes al mes, rotando todo el año. En tu puerta cada 15 días. "
-								
 							/>
 						</div>
 
 						<div
 							css={css`
-								width: 100%;
 								display: flex;
-								align-items: center;
-								max-height: 400px;
-								justify-content: center;
+								margin-top: 8vh;
+								justify-content: space-around;
 							`}
 						>
 							<div
 								css={css`
-									width: 50%;
+									display: flex;
+									align-items: center;
+									justify-content: center;
 								`}
 							>
+								{" "}
 								<BanneronClick />
 							</div>
 
@@ -82,28 +83,17 @@ const Section = () => {
 										font-family: "montserrat", sans-serif;
 										font-size: 18px;
 										padding: 5px;
-										padding-left: 10px;
-										padding-right: 10px;
 										display: flex;
-										align-items: center;
 										justify-content: center;
 										white-space: nowrap;
 										border: 2px solid #eaecebc5;
 										background-color: #251721;
 										border-radius: 24px;
-										margin-top: 60px;
 									`}
 								>
 									Nuestras Especialidades
 								</div>
-								<div
-									css={css`
-										display: flex;
-										align-items: center;
-										justify-content: center;
-										flex-direction: row;
-									`}
-								>
+								<div>
 									<BannerEspecialidades />
 								</div>
 							</div>

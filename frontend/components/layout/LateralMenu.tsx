@@ -7,8 +7,6 @@ export const LateralMenu = () => {
 		<div
 			css={css`
 				display: flex;
-				justify-content: flex-end;
-				margin-right: 5px;
 			`}
 		>
 			<Login />

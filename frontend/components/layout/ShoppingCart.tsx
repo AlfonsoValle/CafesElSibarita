@@ -4,16 +4,11 @@ const ShoppingCart = () => {
 	return (
 		<div
 			css={css`
-				display: flex;
-				justify-content: flex-end;
-				margin-top: 5px;
-				display: center;
-				align-items: center;
 				cursor: pointer;
 			`}
 		>
 			<a>
-				<Image src="/images/coffee-bag-svgrepo-com.svg" width="43px" height="48px" />
+				<Image src="/images/coffee-bag-svgrepo-com.svg" width="40px" height="40px" />
 			</a>
 		</div>
 	);

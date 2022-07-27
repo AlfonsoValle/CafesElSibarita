@@ -11,9 +11,10 @@ const Especialidades: React.FC<NameUrlImage> = ({ name, text, image }) => {
 		<div
 			css={css`
 				display: flex;
-				flex-direction: row;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				padding: 1px;
-				
 			`}
 		>
 			<div
@@ -33,7 +34,7 @@ const Especialidades: React.FC<NameUrlImage> = ({ name, text, image }) => {
 					background-image: url(${image});
 					:hover {
 						transition: all 0.3s ease-in-out;
-						width: 400px;
+						width: 250px;
 					}
 				`}
 			>
@@ -49,7 +50,7 @@ const Especialidades: React.FC<NameUrlImage> = ({ name, text, image }) => {
 						margin-left: 1px;
 						margin-right: 1px;
 						background-color: #eaeceb;
-						border: 2px solid #eaecebc5;
+						border: 2px solid #898a897e;
 						border-radius: 24px;
 						padding: 4px;
 						opacity: 0;

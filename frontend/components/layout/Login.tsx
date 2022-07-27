@@ -8,8 +8,6 @@ export const Login = () => {
 		<div
 			css={css`
 				display: flex;
-				align-items: center;
-				justify-content: center;
 			`}
 		>
 			{!user && (
@@ -17,22 +15,16 @@ export const Login = () => {
 					onClick={() => loginWithRedirect()}
 					css={css`
 						display: flex;
-						align-content: center;
 						color: #f0ebe7;
 						font-weight: 400;
 						font-family: "Montserrat", sans-serif;
 						font-size: 18px;
-
-						text-decoration: none;
-
 						margin-right: 10px;
 						:hover {
 							color: #eda543;
 						}
 
-						justify-content: center;
 						align-items: center;
-						text-align: start;
 
 						cursor: pointer;
 					`}

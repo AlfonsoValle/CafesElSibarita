@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
-import { CafeList } from "../components/home/ShopyCafeList";
+import { CrudEspecialidades } from "../components/home/Admin/CrudEspecialidades";
 
-const SobreNosotros = () => {
+const EditarEspecialidades = () => {
 	return (
 		<section
 			css={css`
@@ -11,6 +11,8 @@ const SobreNosotros = () => {
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center;
+				display: flex;
+				flex-direction: column;
 			`}
 		>
 			<div
@@ -22,12 +24,19 @@ const SobreNosotros = () => {
 						rgba(0, 0, 0, 0.4971292960543593) 100%
 					);
 					height: 100vh;
+					display: flex;
+					padding-left: 200px;
+					padding-right: 200px;
+					white-space: nowrap;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
 				`}
 			>
 				{" "}
-				<CafeList />
+				<CrudEspecialidades />
 			</div>
 		</section>
 	);
 };
-export default SobreNosotros;
+export default EditarEspecialidades;

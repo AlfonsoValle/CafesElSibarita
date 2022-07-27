@@ -6,8 +6,6 @@ const BanneronClick: React.FC = () => {
 		<div
 			className="banneronclick"
 			css={css`
-				
-				
 				margin-top: 1%;
 				width: 50%;
 				display: flex;
