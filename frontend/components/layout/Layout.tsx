@@ -4,11 +4,15 @@ import { injectGlobal } from "@emotion/css";
 import { Footer } from "./Footer";
 
 injectGlobal`
-    @import url('https://fonts.googleapis.com/css?family=Sirin+Stencil:400');
+    @import url('https://fonts.googleapis.com/css?family=Life+Savers:wght@400;700;800&display=swap');
+
+
+
+    
     body{
 	
-  font-family: 'Sirin Stencil', sans-serif;
-  font-weight: 400;
+  font-family: "montserrat", sans-serif;
+  font-weight: 800;
   line-height: 1;
   color: #ffffff;
         margin:0;
@@ -27,11 +31,8 @@ export const Layout = ({ children }) => (
 		<div>
 			<Header />
 
-			
-
 			<div
 				css={css`
-				
 					display: flex;
 					margin: 0;
 					text-align: center;
@@ -41,6 +42,5 @@ export const Layout = ({ children }) => (
 			</div>
 			<Footer />
 		</div>
-		
 	</div>
 );

@@ -1,13 +1,23 @@
 import { css } from "@emotion/react";
+import Link from "next/link";
 
 interface NameDescriptionRoute {
 	name: string;
 	description: string;
+	href: string;
 }
 
-const Sibarita: React.FC<NameDescriptionRoute> = ({ name, description }) => {
+const Sibarita: React.FC<NameDescriptionRoute> = ({ name, description, href }) => {
 	return (
-		<section
+		
+
+
+
+
+
+<Link href={href}>
+		
+		<a
 			css={css`
 				font-family: "montserrat", sans-serif;
 				font-style: italic;
@@ -46,7 +56,9 @@ const Sibarita: React.FC<NameDescriptionRoute> = ({ name, description }) => {
 			>
 				{description}
 			</div>
-		</section>
+		
+		</a>
+		</Link>
 	);
 };
 

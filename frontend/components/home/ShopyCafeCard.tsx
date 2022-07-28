@@ -6,8 +6,7 @@ export const CafeCard: React.FC<{ cafe: any }> = ({ cafe }) => {
 		<div
 			className="card"
 			css={css`
-				color: black;
-				font-size: 15px;
+				
 				height: 500px;
 				display: flex;
 				align-items: center;
@@ -15,7 +14,7 @@ export const CafeCard: React.FC<{ cafe: any }> = ({ cafe }) => {
 				text-align: center;
 				border-radius: 25px;
 				background-color: #e2a808ca;
-				color: black;
+				
 			`}
 		>
 			<div className="card-content">
@@ -24,11 +23,11 @@ export const CafeCard: React.FC<{ cafe: any }> = ({ cafe }) => {
 				<h3>{cafe.description}</h3>
 				<div
 					css={css`
-						color: black;
+						
 					`}
 				>
 					Precio:
-					<h4>{cafe.priceRange.minVariantPrice.amount} E</h4>
+					<h4>{cafe.priceRange.minVariantPrice.amount} €</h4>
 				</div>
 			</div>
 		</div>

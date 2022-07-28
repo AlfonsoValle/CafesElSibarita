@@ -56,6 +56,7 @@ const Section = () => {
 							<Sibarita
 								name="Suscripción Sibarita"
 								description="Dos variedades diferentes al mes, rotando todo el año. En tu puerta cada 15 días. "
+								href="/suscripcionsibarita"
 							/>
 						</div>
 

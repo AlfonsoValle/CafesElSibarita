@@ -1,6 +1,7 @@
 import { css } from "@emotion/react";
+import { CafeList } from "../components/home/ShopyCafeList";
 
-const SobreNosotros = () => {
+const SuscripcionSibarita = () => {
 	return (
 		<section
 			css={css`
@@ -26,9 +27,9 @@ const SobreNosotros = () => {
 					height: 100vh;
 				`}
 			>
-				
+				<CafeList />
 			</div>
 		</section>
 	);
 };
-export default SobreNosotros;
+export default SuscripcionSibarita;
