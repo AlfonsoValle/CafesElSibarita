@@ -8,7 +8,6 @@ const SobreNosotros = () => {
 				height: 100vh;
 				width: 100%;
 				background-image: url("/images/fondocafe.jpg");
-
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center;
@@ -28,7 +27,6 @@ const SobreNosotros = () => {
 					height: 100vh;
 				`}
 			>
-				{" "}
 				<CafeList />
 			</div>
 		</section>

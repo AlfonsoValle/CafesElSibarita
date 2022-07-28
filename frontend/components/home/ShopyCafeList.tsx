@@ -7,7 +7,8 @@ export const CafeList = () => {
 		refreshInterval: 2000,
 	});
 
-	const cafeData = data.data.products.edges;
+	const cafeData = data?.data.products.edges;
+		
 
 	return (
 		<div
@@ -26,7 +27,7 @@ export const CafeList = () => {
 				backdrop-filter: blur(6px);
 			`}
 		>
-			{cafeData.length > 0 &&
+			{cafeData?.length > 0 &&
 				cafeData.map((edge, index) => <CafeCard cafe={edge.node} key={index} />)}
 		</div>
 	);
