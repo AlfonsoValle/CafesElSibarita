@@ -8,6 +8,7 @@ const SobreNosotros = () => {
 				height: 100vh;
 				width: 100%;
 				background-image: url("/images/fondocafe.jpg");
+
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center;
@@ -15,6 +16,9 @@ const SobreNosotros = () => {
 		>
 			<div
 				css={css`
+					display: flex;
+					align-items: center;
+					justify-content: center;
 					background: rgb(5, 2, 0);
 					background: linear-gradient(
 						180deg,

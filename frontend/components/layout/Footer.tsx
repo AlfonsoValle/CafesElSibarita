@@ -7,8 +7,9 @@ export const Footer = () => {
 		<>
 			<div
 				css={css`
-					margin-top: 94vh;
+					
 					position: absolute;
+					bottom: 0;
 					display: flex;
 					justify-content: end;
 					width: 100%;
@@ -20,7 +21,6 @@ export const Footer = () => {
 						align-items: center;
 						justify-content: center;
 						gap: 10px;
-
 						border-radius: 30px;
 						padding: 3px;
 					`}

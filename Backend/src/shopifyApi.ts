@@ -1,13 +1,11 @@
 import Shopify from "@shopify/shopify-api";
 import { FastifyPluginAsync } from "fastify";
+import { STOREFRONT, SHOPIFY_SHOP } from "./config";
 
 export const shopifyApi: FastifyPluginAsync = async (app) => {
 	app.get("/sibarita", async (req, res) => {
-		const storefrontAccessToken = "a49676320ff0612be117f3891cd0d138 ";
-		const shop = "cafes-el-sibarita.myshopify.com";
-
-		const storefrontClient = new Shopify.Clients.Storefront(shop, storefrontAccessToken);
-		const products = await storefrontClient.query({
+		const storefrontClient: any = new Shopify.Clients.Storefront(SHOPIFY_SHOP, STOREFRONT);
+		const products: any = await storefrontClient.query({
 			data: ` {
             products(first: 2) {
               edges {

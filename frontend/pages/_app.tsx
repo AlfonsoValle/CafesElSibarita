@@ -1,6 +1,8 @@
 import { Layout } from "../components/layout/Layout";
 import { Auth0Provider } from "@auth0/auth0-react";
+import { SWRConfig } from "swr";
 import { useMemo } from "react";
+import { backend_fetcher } from "../lib/fetcher";
 
 const MyApp = ({ Component, pageProps }) => {
 	const origin = useMemo(() => {
@@ -15,9 +17,11 @@ const MyApp = ({ Component, pageProps }) => {
 			clientId={process.env.NEXT_PUBLIC_AUTH0_CLIENT_ID}
 			redirectUri={origin}
 		>
-			<Layout>
-				<Component {...pageProps} />
-			</Layout>
+			<SWRConfig value={{ fetcher: backend_fetcher }}>
+				<Layout>
+					<Component {...pageProps} />
+				</Layout>
+			</SWRConfig>
 		</Auth0Provider>
 	);
 };

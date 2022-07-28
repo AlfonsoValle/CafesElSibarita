@@ -23,16 +23,15 @@ injectGlobal`
 `;
 
 export const Layout = ({ children }) => (
-	<div css={css``}>
+	<div>
 		<div>
 			<Header />
-			<div css={css``}>
-				<Footer />
-			</div>
+
+			
+
 			<div
 				css={css`
-					//max-width: 100vw;
-					//max-height: 100vh;
+				
 					display: flex;
 					margin: 0;
 					text-align: center;
@@ -40,6 +39,8 @@ export const Layout = ({ children }) => (
 			>
 				{children}
 			</div>
+			<Footer />
 		</div>
+		
 	</div>
 );
