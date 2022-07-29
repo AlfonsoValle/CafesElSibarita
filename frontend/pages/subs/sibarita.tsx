@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { CafeList } from "../components/home/ShopyCafeList";
+import { CafeList } from "../../components/home/ShopyCafeList";
 
 const SuscripcionSibarita = () => {
 	return (

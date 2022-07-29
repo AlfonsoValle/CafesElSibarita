@@ -10,11 +10,6 @@ interface NameDescriptionRoute {
 const Sibarita: React.FC<NameDescriptionRoute> = ({ name, description, href }) => {
 	return (
 		
-
-
-
-
-
 <Link href={href}>
 		
 		<a

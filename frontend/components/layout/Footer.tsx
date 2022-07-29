@@ -7,7 +7,6 @@ export const Footer = () => {
 		<>
 			<div
 				css={css`
-					
 					position: absolute;
 					bottom: 0;
 					display: flex;

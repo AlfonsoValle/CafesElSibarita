@@ -1,6 +1,7 @@
 import { css } from "@emotion/react";
 import { MainMenu } from "./MainMenu";
 import { LateralMenu } from "./LateralMenu";
+import { HeaderButton } from "./HeaderButton";
 
 export const Header = () => {
 	return (
@@ -20,9 +21,11 @@ export const Header = () => {
 				<div
 					css={css`
 						margin-right: 5px;
+						display: flex;
 					`}
 				>
 					{" "}
+					<HeaderButton text="EDITAR" href="/editarespecialidades" />
 					<LateralMenu />
 				</div>
 			</div>

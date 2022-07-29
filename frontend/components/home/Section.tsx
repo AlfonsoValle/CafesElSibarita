@@ -38,7 +38,6 @@ const Section = () => {
 					<div
 						css={css`
 							min-width: 90%;
-
 							width: 95%;
 						`}
 					>
@@ -52,11 +51,12 @@ const Section = () => {
 							<Prime
 								name="Suscripción Prime"
 								description="Sólo tu Café Favorito, de tu proveedor favorito. Cada 15 días en casa. "
+								href="/subs/prime"
 							/>
 							<Sibarita
 								name="Suscripción Sibarita"
 								description="Dos variedades diferentes al mes, rotando todo el año. En tu puerta cada 15 días. "
-								href="/suscripcionsibarita"
+								href="/subs/sibarita"
 							/>
 						</div>
 

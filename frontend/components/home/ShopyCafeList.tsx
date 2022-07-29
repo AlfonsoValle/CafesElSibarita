@@ -21,7 +21,6 @@ export const CafeList = () => {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				
 				background: linear-gradient(
 					1deg,
 					rgba(255, 255, 255, 0.1),

@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
-import { CrudEspecialidades } from "../components/home/Admin/CrudEspecialidades";
+import { CafeList } from "../../components/home/ShopyCafeList";
 
-const EditarEspecialidades = () => {
+const SuscripcionPrime = () => {
 	return (
 		<section
 			css={css`
@@ -11,12 +11,13 @@ const EditarEspecialidades = () => {
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center;
-				display: flex;
-				flex-direction: column;
 			`}
 		>
 			<div
 				css={css`
+					display: flex;
+					align-items: center;
+					justify-content: center;
 					background: rgb(5, 2, 0);
 					background: linear-gradient(
 						180deg,
@@ -24,19 +25,11 @@ const EditarEspecialidades = () => {
 						rgba(0, 0, 0, 0.4971292960543593) 100%
 					);
 					height: 100vh;
-					display: flex;
-					padding-left: 200px;
-					padding-right: 200px;
-					white-space: nowrap;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
 				`}
 			>
-				{" "}
-				<CrudEspecialidades />
+				<CafeList />
 			</div>
 		</section>
 	);
 };
-export default EditarEspecialidades;
+export default SuscripcionPrime;
