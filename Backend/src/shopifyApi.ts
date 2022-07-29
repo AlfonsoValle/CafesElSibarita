@@ -1,6 +1,7 @@
 import Shopify from "@shopify/shopify-api";
 import { FastifyPluginAsync } from "fastify";
 import { STOREFRONT, SHOPIFY_SHOP } from "./config";
+// import { Unauthorized } from "http-errors";
 
 export const shopifyApi: FastifyPluginAsync = async (app) => {
 	app.get("/sibarita", async (req, res) => {
@@ -33,5 +34,11 @@ export const shopifyApi: FastifyPluginAsync = async (app) => {
 		});
 
 		return products.body;
+		//     if (x===2) {
+		//     ...
+		//     }
+		//     else {
+		//       throw new Unauthorized("Your Token is not Valid");
+		//     }
 	});
 };
