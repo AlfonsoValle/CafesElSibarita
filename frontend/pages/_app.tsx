@@ -3,7 +3,7 @@ import { Auth0Provider, useAuth0 } from "@auth0/auth0-react";
 import { SWRConfig } from "swr";
 import { backend_fetcher } from "../lib/fetcher";
 import { useEffect, useMemo, useState } from "react";
-import { Spinner } from "../components/spinner/spinner";
+import { TokenContext } from "../lib/tokencontext";
 
 const MyApp = ({ Component, pageProps }) => {
 	const AuthenticatedApp = ({ children }) => {
@@ -20,13 +20,13 @@ const MyApp = ({ Component, pageProps }) => {
 
 		return (
 			<SWRConfig value={{ fetcher: backend_fetcher(token) }}>
-				{token && children}
-				{!token && (
-					
-						<Spinner />
-					
-				)}
-				;
+				<TokenContext.Provider
+					value={{
+						Auth0Token: { value: token },
+					}}
+				>
+					{children}
+				</TokenContext.Provider>
 			</SWRConfig>
 		);
 	};
