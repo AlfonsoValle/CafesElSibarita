@@ -6,7 +6,11 @@ import { useAuth0 } from "@auth0/auth0-react";
 const EditarEspecialidades = () => {
 	const { getAccessTokenSilently } = useAuth0();
 
-
+	useEffect(() => {
+		getAccessTokenSilently().then((token) => {
+			console.log("tokensito jugosito ------>", token);
+		});
+	}, []);
 
 	return (
 		<section
