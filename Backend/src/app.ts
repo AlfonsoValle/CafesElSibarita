@@ -9,11 +9,9 @@ const adminPlugin: FastifyPluginAsync = async (app) => {
 };
 
 export const app: FastifyPluginAsync = async (app) => {
+	await app.register(Auth0Verify, { domain: "dev-rrewzqgm.us.auth0.com", audience: "sibarita" });
 	app.register(cors);
 	app.register(adminPlugin);
-
-	await app.register(Auth0Verify, { domain: "dev-rrewzqgm.us.auth0.com", audience: "sibarita" });
-
 	app.get("/", async (req, res) => {
 		return [
 			{

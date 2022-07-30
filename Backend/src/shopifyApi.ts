@@ -34,11 +34,6 @@ export const shopifyApi: FastifyPluginAsync = async (app) => {
 		});
 
 		return products.body;
-		//     if (x===2) {
-		//     ...
-		//     }
-		//     else {
-		//       throw new Unauthorized("Your Token is not Valid");
-		//     }
+	
 	});
 };
