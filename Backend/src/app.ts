@@ -2,6 +2,8 @@ import { FastifyPluginAsync } from "fastify";
 import cors from "@fastify/cors";
 import { shopifyApi } from "./shopifyApi";
 import Auth0Verify from "fastify-auth0-verify";
+import { db_plugin } from "./db";
+import { userprofile } from "./routes/profile";
 
 const adminPlugin: FastifyPluginAsync = async (app) => {
 	app.addHook("preValidation", app.authenticate);
@@ -10,9 +12,12 @@ const adminPlugin: FastifyPluginAsync = async (app) => {
 
 export const app: FastifyPluginAsync = async (app) => {
 	await app.register(Auth0Verify, { domain: "dev-rrewzqgm.us.auth0.com", audience: "sibarita" });
+	app.register(db_plugin);
 	app.register(cors);
 	app.register(adminPlugin);
-	app.get("/", async (req, res) => {
+	app.register(userprofile);
+
+	app.get("/static", async (req, res) => {
 		return [
 			{
 				handle: 1,

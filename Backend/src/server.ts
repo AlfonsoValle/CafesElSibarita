@@ -1,6 +1,7 @@
 import fastify, { FastifyInstance } from "fastify";
 import { app } from "./app";
 import blipp from "fastify-blipp";
+import { PORT } from "./config";
 
 const server: FastifyInstance = fastify({
 	logger: {
@@ -19,7 +20,7 @@ server.register(app);
 
 server
 	.listen({
-		port: parseInt(process.env.PORT || "5000"),
+		port: parseInt(PORT || "7000"),
 		host: "0.0.0.0",
 	})
 	.then(() => {
