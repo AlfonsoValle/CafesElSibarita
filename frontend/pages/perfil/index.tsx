@@ -1,9 +1,9 @@
 import { css } from "@emotion/react";
-import { CrudEspecialidades } from "../../components/Admin/CrudEspecialidades";
 import { useEffect, useRef } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import { PerfilCrud } from "../../components/profile/CrudProfile";
 
-const EditarEspecialidades = () => {
+const CrearPerfil = () => {
 	const { getAccessTokenSilently } = useAuth0();
 
 	useEffect(() => {
@@ -44,9 +44,9 @@ const EditarEspecialidades = () => {
 				`}
 			>
 				{" "}
-				<CrudEspecialidades />
+				<PerfilCrud />
 			</div>
 		</section>
 	);
 };
-export default EditarEspecialidades;
+export default CrearPerfil;

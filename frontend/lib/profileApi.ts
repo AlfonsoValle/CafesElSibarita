@@ -1,5 +1,5 @@
 import axios from "axios";
 
-export const productoShopify = axios.create({
+export const profiletobackend = axios.create({
 	baseURL: "http://localhost:7000",
 });

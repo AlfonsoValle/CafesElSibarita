@@ -1,19 +1,25 @@
 import { useForm } from "react-hook-form";
 import { ButtonForm } from "./ButtonForm";
 import { css } from "@emotion/react";
+import { useState } from "react";
+import { createProfile } from "../../lib/profilerepo";
 
-export const CrudProfile = () => {
-	const {
-		register,
-		handleSubmit,
-		watch,
-		formState: { errors, isSubmitted },
-	} = useForm();
+export const PerfilCrud = () => {
+	const [name, setname] = useState("");
+	const [lastname, setlastname] = useState("");
+	const [address, setaddress] = useState("");
+	const [phone, setphone] = useState("");
 
-	const submit = handleSubmit((data) => {
-		console.log("handle SUBMIT");
-		console.log(data);
-	});
+	const handleSubmit = async () => {
+		await createProfile({
+			auth0id: "1",
+			name,
+			lastname,
+			address,
+			phone,
+			favourite_products: [],
+		});
+	};
 
 	return (
 		<div
@@ -32,12 +38,13 @@ export const CrudProfile = () => {
 					justify-content: center;
 				`}
 			>
-				<label className="form-label">Nombre de la Especialidad: </label>
+				<label className="form-label">Nombre: </label>
 				<input
 					type="text"
 					className="form-control"
-					placeholder="Especialidad"
-					{...register("especialidad")}
+					placeholder="Alfonso"
+					value={name}
+					onChange={(e) => setname(e.target.value)}
 				/>
 			</div>
 			<div
@@ -48,12 +55,13 @@ export const CrudProfile = () => {
 					justify-content: center;
 				`}
 			>
-				<label className="form-label"> Descripción: </label>
+				<label className="form-label"> Apellidos: </label>
 				<input
 					className="form-control"
 					type="text"
-					placeholder="Descripción"
-					{...register("descripción")}
+					placeholder="Garcia Garcia"
+					value={lastname}
+					onChange={(e) => setlastname(e.target.value)}
 				/>
 			</div>
 			<div
@@ -64,12 +72,13 @@ export const CrudProfile = () => {
 					justify-content: center;
 				`}
 			>
-				<label className="form-label"> Bandera: </label>
+				<label className="form-label"> Direccion: </label>
 				<input
 					className="form-control"
 					type="text"
-					placeholder="Utilice el Código ISO del País"
-					{...register("bandera")}
+					placeholder="Avenida de la galletita nº1"
+					value={address}
+					onChange={(e) => setaddress(e.target.value)}
 				/>
 			</div>
 			<div
@@ -80,10 +89,25 @@ export const CrudProfile = () => {
 					justify-content: center;
 				`}
 			>
-				<ButtonForm onClick={submit} variant={isSubmitted ? "done" : "pending"}>
-					{" "}
-					Introducir Especialidad{" "}
-				</ButtonForm>
+				<label className="form-label"> Telefono: </label>
+				<input
+					className="form-control"
+					type="text"
+					placeholder="675533223"
+					value={phone}
+					onChange={(e) => setphone(e.target.value)}
+				/>
+			</div>
+
+			<div
+				css={css`
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+				`}
+			>
+				<ButtonForm onClick={handleSubmit}>Guardar Perfil</ButtonForm>
 			</div>
 		</div>
 	);

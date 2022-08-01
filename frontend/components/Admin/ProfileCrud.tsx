@@ -82,7 +82,7 @@ export const CrudEspecialidades = () => {
 			>
 				<Botonformulario onClick={submit} variant={isSubmitted ? "done" : "pending"}>
 					{" "}
-					Introducir Especialidad{" "}
+					Guardar Perfil
 				</Botonformulario>
 			</div>
 		</div>

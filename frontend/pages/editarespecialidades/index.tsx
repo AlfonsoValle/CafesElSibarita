@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { CrudEspecialidades } from "../../components/Admin/CrudEspecialidades";
+import { CrudEspecialidades } from "../../components/Admin/ProfileCrud";
 import { useEffect, useRef } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 

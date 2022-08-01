@@ -51,7 +51,7 @@ const MyApp = ({ Component, pageProps }) => {
 				</Layout>
 			</AuthenticatedApp>
 		</Auth0Provider>
-	);
+						);
 };
 
 export default MyApp;

@@ -1,5 +1,6 @@
 import { css } from "@emotion/react";
 import { useAuth0 } from "@auth0/auth0-react";
+import axios from "axios";
 
 export const Login = () => {
 	const { loginWithRedirect, user, logout } = useAuth0();
@@ -68,7 +69,7 @@ export const Login = () => {
 							cursor: pointer;
 						`}
 					>
-						{user.nickname}
+						{user.sub}
 					</button>
 					<button
 						onClick={() => logout({ returnTo: window.location.origin })}
