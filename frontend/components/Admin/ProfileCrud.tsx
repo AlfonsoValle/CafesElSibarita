@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { Botonformulario } from "./Botondeformulario";
 import { css } from "@emotion/react";
 
+
 export const CrudEspecialidades = () => {
 	const {
 		register,

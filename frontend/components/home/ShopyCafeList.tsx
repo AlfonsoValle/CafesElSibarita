@@ -1,7 +1,7 @@
 import { CafeCard } from "./ShopyCafeCard";
 import { css } from "@emotion/react";
 import useSWR from "swr";
-import { Spinner } from "../spinner/Spinner";
+import { Spinner } from "../shared/Spinner";
 import { useToken } from "../../lib/tokencontext";
 
 export const CafeList = () => {
@@ -10,9 +10,6 @@ export const CafeList = () => {
 	});
 
 	const cafeData = data?.data.products.edges;
-
-	const { Auth0Token } = useToken();
-	const EasyToken = Auth0Token.value;
 
 	return (
 		<div
@@ -34,10 +31,11 @@ export const CafeList = () => {
 				backdrop-filter: blur(6px);
 			`}
 		>
-			{EasyToken &&
-				cafeData?.length > 0 &&
-				cafeData.map((edge, index) => <CafeCard cafe={edge.node} key={index} />)}
-			{!EasyToken && <Spinner />}
+			{cafeData?.length > 0 ? (
+				cafeData.map((edge, index) => <CafeCard cafe={edge.node} key={index} />)
+			) : (
+				<Spinner />
+			)}
 		</div>
 	);
 };
