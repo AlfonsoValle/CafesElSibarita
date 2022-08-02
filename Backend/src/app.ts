@@ -6,7 +6,7 @@ import { db_plugin } from "./db";
 import { userprofile } from "./routes/profile";
 
 const adminPlugin: FastifyPluginAsync = async (app) => {
-	app.addHook("preValidation", app.authenticate);
+	// app.addHook("preValidation", app.authenticate);
 	app.register(shopifyApi);
 };
 
