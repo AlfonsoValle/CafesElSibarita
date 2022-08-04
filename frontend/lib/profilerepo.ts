@@ -9,7 +9,13 @@ interface IProfile {
 	favourite_products?: string[];
 }
 
-export const createProfile = async (data: IProfile) => {
-	const res = await profiletobackend.post("/X", data);
+export const CreateProfile = async (data: IProfile) => {
+	const res = await profiletobackend.post("/perfil/createProfile", data);
+	console.log(res.data);
 	return res.data;
 };
+
+// export const findProfile = async () => {
+// 	const res = await profiletobackend.get("/perfil/findProfile");
+// 	return res.data;
+// };

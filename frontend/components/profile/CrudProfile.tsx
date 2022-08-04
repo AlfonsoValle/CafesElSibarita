@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { ButtonForm } from "./ButtonForm";
 import { css } from "@emotion/react";
 import { useState } from "react";
-import { createProfile } from "../../lib/profilerepo";
+import { CreateProfile } from "../../lib/profilerepo";
 
 export const PerfilCrud = () => {
 	const [name, setname] = useState("");
@@ -11,8 +11,9 @@ export const PerfilCrud = () => {
 	const [phone, setphone] = useState("");
 
 	const handleSubmit = async () => {
-		await createProfile({
-			auth0id: "1",
+		console.log(name, lastname, address, phone);
+		await CreateProfile({
+			auth0id: "",
 			name,
 			lastname,
 			address,

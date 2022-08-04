@@ -21,7 +21,9 @@ const AuthenticationComponentApp = ({ children }) => {
 				value={{
 					Auth0Token: { value: token },
 				}}
-			></TokenContext.Provider>
+			>
+				{children}
+			</TokenContext.Provider>
 		</SWRConfig>
 	);
 };
