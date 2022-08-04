@@ -1,12 +1,12 @@
 import { FastifyPluginAsync } from "fastify";
-import { ProfileModel } from "../profile.model";
+import { profileModel } from "../profile.model";
 
-export const userprofile: FastifyPluginAsync = async (app) => {
-	app.get("/perfil", { preValidation: app.authenticate }, async (req, res) => {
-		const profilefound = await ProfileModel.findOne({
+export const userProfile: FastifyPluginAsync = async (app) => {
+	app.get("/readProfile", async (req, res) => {
+		const profileFound = await profileModel.findOne({
 			auth0id: "auth0|62d3511b69e95f64be8a8a4a",
 		});
 
-		return profilefound;
+		return profileFound;
 	});
 };

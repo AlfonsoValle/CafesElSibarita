@@ -3,20 +3,25 @@ import cors from "@fastify/cors";
 import { shopifyApi } from "./shopifyApi";
 import Auth0Verify from "fastify-auth0-verify";
 import { db_plugin } from "./db";
-import { userprofile } from "./routes/profile";
+import { userProfile } from "./routes/profile";
+import { specialities } from "./routes/specialities";
+import { createSpecialities } from "./routes/createSpecialties";
+import { createProfile } from "./routes/createProfile";
 
-const adminPlugin: FastifyPluginAsync = async (app) => {
-	// app.addHook("preValidation", app.authenticate);
-	app.register(shopifyApi);
-};
+// const adminPlugin: FastifyPluginAsync = async (app) => {
+// 	// app.addHook("preValidation", app.authenticate);
+// 	app.register(shopifyApi);
+// };
 
 export const app: FastifyPluginAsync = async (app) => {
 	await app.register(Auth0Verify, { domain: "dev-rrewzqgm.us.auth0.com", audience: "sibarita" });
 	app.register(db_plugin);
 	app.register(cors);
-	app.register(adminPlugin);
-	app.register(userprofile);
-
+	app.register(createSpecialities, { prefix: "editarespecialidades" });
+	app.register(specialities, { prefix: "editarespecialidades" });
+	app.register(createProfile, { prefix: "perfil" });
+	app.register(userProfile, { prefix: "perfil" });
+	app.register(shopifyApi, { prefix: "sibarita" });
 	app.get("/static", async (req, res) => {
 		return [
 			{

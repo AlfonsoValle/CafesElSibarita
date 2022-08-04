@@ -4,7 +4,7 @@ import { STOREFRONT, SHOPIFY_SHOP } from "./config";
 // import { Unauthorized } from "http-errors";
 
 export const shopifyApi: FastifyPluginAsync = async (app) => {
-	app.get("/sibarita", async (req, res) => {
+	app.get("/", async (req, res) => {
 		const storefrontClient: any = new Shopify.Clients.Storefront(SHOPIFY_SHOP, STOREFRONT);
 		const products: any = await storefrontClient.query({
 			data: ` {

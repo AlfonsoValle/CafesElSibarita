@@ -1,7 +1,7 @@
 import { FastifyPluginAsync } from "fastify";
-import { ProfileModel } from "../profile.model";
+import { profileModel } from "../profile.model";
 
-export const Createuserprofile: FastifyPluginAsync = async (app) => {
+export const createProfile: FastifyPluginAsync = async (app) => {
 	app.post<{
 		Body: {
 			auth0id: string;
@@ -11,12 +11,12 @@ export const Createuserprofile: FastifyPluginAsync = async (app) => {
 			phone: string;
 			favourite_products: string[];
 		};
-	}>("/X", async (req, res) => {
-		const data = req.body;
+	}>("/createProfile", async (req, res) => {
+		const data: any = req.body;
 		req.log.info("Output");
 		const { auth0id, name, lastname, address, phone, favourite_products } = data;
 
-		const doc = await ProfileModel.create({
+		const doc = await profileModel.create({
 			auth0id,
 			name,
 			lastname,

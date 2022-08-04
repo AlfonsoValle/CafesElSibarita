@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 import { MONGODB_URL } from "./config";
-import { ProfileModel } from "./profile.model";
+import { profileModel } from "./profile.model";
 
 const createProfileExample = async () => {
-	await ProfileModel.create([
+	await profileModel.create([
 		{
 			auth0id: "auth0|62d3511b69e95f64be8a8a4a",
 			name: "Federico",
@@ -24,7 +24,7 @@ const createProfileExample = async () => {
 (async () => {
 	await mongoose.connect(MONGODB_URL);
 	try {
-		await ProfileModel.collection.drop();
+		await profileModel.collection.drop();
 	} catch (error) {
 		console.log("no he encontrado la info");
 	}
