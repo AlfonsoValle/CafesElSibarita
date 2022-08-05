@@ -3,6 +3,7 @@ import { MainMenu } from "./MainMenu";
 import { LateralMenu } from "./LateralMenu";
 import { HeaderButton } from "./HeaderButton";
 import { TokenApp } from "../shared/TokenApp";
+import { BotonPrueba } from "../tailwind components/botonprueba";
 
 export const Header = () => {
 	return (
@@ -27,7 +28,7 @@ export const Header = () => {
 						`}
 					>
 						{" "}
-						<HeaderButton text="EDITAR" href="/editarespecialidades" />
+						<BotonPrueba text="EDITAR" href="/editarespecialidades" />
 						<LateralMenu />
 					</div>
 				</div>

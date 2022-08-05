@@ -3,8 +3,10 @@ import { useMemo } from "react";
 import { SWRConfig } from "swr";
 import { PublicFetcher } from "../lib/PublicFetcher";
 import Head from "next/head";
+import { AppProps } from "next/app";
+import { GlobalStyles } from "twin.macro";
 
-const MyApp = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
 	const origin = useMemo(() => {
 		if (typeof window != "undefined") {
 			return window.location.origin;
@@ -14,8 +16,9 @@ const MyApp = ({ Component, pageProps }) => {
 	return (
 		<SWRConfig value={{ fetcher: PublicFetcher }}>
 			<Head>
-				<title>Cafes el Sibarita</title>
+				<title>Cafes El Sibarita</title>
 			</Head>
+			<GlobalStyles />
 			<Layout>
 				<Component {...pageProps} />
 			</Layout>
