@@ -1,4 +1,4 @@
-import { profiletobackend } from "./profileApi";
+import { profiletobackend } from "./ProfileApi";
 
 interface IProfile {
 	auth0id?: string;

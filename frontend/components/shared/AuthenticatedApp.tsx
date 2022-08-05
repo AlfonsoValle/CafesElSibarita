@@ -4,6 +4,8 @@ import { useEffect, useState, useMemo } from "react";
 import { TokenContext } from "../../lib/tokencontext";
 import { AuthenticatedFetcher } from "../../lib/AuthenticatedFetcher";
 
+
+
 const AuthenticationComponentApp = ({ children }) => {
 	const { getAccessTokenSilently } = useAuth0();
 	const [token, setToken] = useState("");
@@ -42,7 +44,7 @@ export const AuthenticatedApp = ({ children }) => {
 			redirectUri={origin}
 			audience="sibarita"
 			scope="openid profile email"
-		>
+			>
 			<AuthenticationComponentApp>{children}</AuthenticationComponentApp>
 		</Auth0Provider>
 	);

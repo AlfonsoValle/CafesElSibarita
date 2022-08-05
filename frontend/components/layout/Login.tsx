@@ -69,7 +69,7 @@ export const Login = () => {
 							cursor: pointer;
 						`}
 					>
-						{user.sub}
+						{user.nickname}
 					</button>
 					<button
 						onClick={() => logout({ returnTo: window.location.origin })}

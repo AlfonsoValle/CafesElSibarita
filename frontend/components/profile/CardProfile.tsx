@@ -11,7 +11,7 @@ import { Spinner } from "../shared/Spinner";
 export const CardProfile = () => {
 	const { Auth0Token } = useToken();
 	const token = Auth0Token.value;
-	const { data } = useSWR("/perfil/readProfile", AuthenticatedFetcher, {
+	const { data } = useSWR("/perfil/readProfile", AuthenticatedFetcher(token), {
 		refreshInterval: 5000,
 	});
 	console.log(data);
@@ -19,11 +19,11 @@ export const CardProfile = () => {
 	return (
 		<div>
 			<div>
-				{/* {token && <h2> {prueba?.name}</h2>}
-				{token && <h2> {prueba?.lastname}</h2>}
-				{token && <h3> {prueba?.address} </h3>}
-				{token && <h3>{prueba?.phone} </h3>}
-				{!token && <Spinner />} */}
+				{token && <h2> {prueba.name}</h2>}
+				{token && <h2> {prueba.lastname}</h2>}
+				{token && <h3> {prueba.address} </h3>}
+				{token && <h3>{prueba.phone} </h3>}
+				{!token && <Spinner />}
 			</div>
 		</div>
 	);
