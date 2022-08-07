@@ -27,8 +27,7 @@ export const Header = () => {
 							display: flex;
 						`}
 					>
-						{" "}
-						<BotonPrueba text="EDITAR" href="/editarespecialidades" />
+						<BotonPrueba text="Editar Especialidades" href="/editarespecialidades" />
 						<LateralMenu />
 					</div>
 				</div>

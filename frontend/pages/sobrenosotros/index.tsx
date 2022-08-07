@@ -1,15 +1,19 @@
 import { css } from "@emotion/react";
-
+import { AboutUsText } from "../../components/Texts/AboutUsText";
 const SobreNosotros = () => {
 	return (
 		<section
 			css={css`
-				height: 100vh;
-				width: 100%;
-				background-image: url("/images/fondocafe.jpg");
+				//height: 100vh;
+				//width: 100%;
+				//background-color: #ffffff;
+				//background-repeat: no-repeat;
+				//background-size: cover;
+				//background-position: center;
+				background-image: url("/images/34.png");
 				background-repeat: no-repeat;
 				background-size: cover;
-				background-position: center;
+				//background-position: center;
 			`}
 		>
 			<div
@@ -20,13 +24,14 @@ const SobreNosotros = () => {
 					background: rgb(5, 2, 0);
 					background: linear-gradient(
 						180deg,
-						rgba(5, 2, 0, 0.8472693520767682) 0%,
-						rgba(0, 0, 0, 0.4971292960543593) 100%
+						rgba(58, 53, 50, 0.847) 0%,
+						rgba(138, 100, 47, 0.497) 100%
 					);
 					height: 100vh;
 				`}
 			>
-				
+				{" "}
+				<AboutUsText />
 			</div>
 		</section>
 	);

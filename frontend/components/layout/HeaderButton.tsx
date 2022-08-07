@@ -13,7 +13,7 @@ export const HeaderButton: React.FC<ButtonProps> = ({ href, text }) => {
 				css={css`
 					display: flex;
 					align-content: center;
-					
+
 					color: #f0ebe7;
 					font-weight: 400;
 					font-family: Montserrat, sans-serif;
@@ -34,7 +34,6 @@ export const HeaderButton: React.FC<ButtonProps> = ({ href, text }) => {
 					cursor: pointer;
 				`}
 			>
-			
 				{text}
 			</a>
 		</Link>
