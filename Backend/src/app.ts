@@ -1,6 +1,6 @@
 import { FastifyPluginAsync } from "fastify";
 import cors from "@fastify/cors";
-import { shopifyApi } from "./shopifyApi";
+import { OneProduct, AllProducts, CheckoutMutation } from "./GraphQLApi/shopifyApi";
 import Auth0Verify from "fastify-auth0-verify";
 import { db_plugin } from "./db";
 import { userProfile } from "./routes/profile";
@@ -21,7 +21,10 @@ export const app: FastifyPluginAsync = async (app) => {
 	app.register(specialities, { prefix: "editarespecialidades" });
 	app.register(createProfile, { prefix: "perfil" });
 	app.register(userProfile, { prefix: "perfil" });
-	app.register(shopifyApi, { prefix: "sibarita" });
+	app.register(OneProduct, { prefix: "sibarita" });
+	app.register(AllProducts, { prefix: "sibarita" });
+	app.register(CheckoutMutation, { prefix: "sibarita" });
+
 	app.get("/static", async (req, res) => {
 		return [
 			{
