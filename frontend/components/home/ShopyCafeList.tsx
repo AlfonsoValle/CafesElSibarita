@@ -10,7 +10,7 @@ export const CafeList = () => {
 	});
 
 	const cafeData = data?.data.products.edges;
-
+	console.log(cafeData);
 	return (
 		<div
 			css={css`

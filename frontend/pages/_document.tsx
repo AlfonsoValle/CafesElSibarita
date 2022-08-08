@@ -6,7 +6,7 @@ class MyDocument extends Document {
 			<Html>
 				<Head>
 					<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-					<title>Cafes el Sibarita</title>
+					
 				</Head>
 				<body>
 					<Main />
