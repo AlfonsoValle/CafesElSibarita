@@ -1,5 +1,5 @@
 import { FastifyPluginAsync } from "fastify";
-import { profileModel } from "../profile.model";
+import { profileModel } from "./profile.model";
 
 export const createProfile: FastifyPluginAsync = async (app) => {
 	app.post<{

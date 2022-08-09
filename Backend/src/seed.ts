@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import { MONGODB_URL } from "./config";
-import { profileModel } from "./profile.model";
+import { profileModel } from "./routes/Profile/profile.model";
 
 const createProfileExample = async () => {
 	await profileModel.create([

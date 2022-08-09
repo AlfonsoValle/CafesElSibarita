@@ -1,7 +1,6 @@
 import Shopify from "@shopify/shopify-api";
 import { FastifyPluginAsync } from "fastify";
-import { STOREFRONT, SHOPIFY_SHOP } from "../config";
-// import { Unauthorized } from "http-errors";
+import { STOREFRONT, SHOPIFY_SHOP } from "../../config";
 
 export const AllProducts: FastifyPluginAsync = async (app) => {
 	app.get("/", async (req, res) => {

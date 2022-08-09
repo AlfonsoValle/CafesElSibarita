@@ -1,5 +1,5 @@
 import { FastifyPluginAsync } from "fastify";
-import { profileModel } from "../profile.model";
+import { profileModel } from "./profile.model";
 
 export const userProfile: FastifyPluginAsync = async (app) => {
 	app.get("/readProfile", async (req, res) => {

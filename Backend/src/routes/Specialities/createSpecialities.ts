@@ -1,5 +1,5 @@
 import { FastifyPluginAsync } from "fastify";
-import { specialityModel } from "../specialty.model";
+import { specialityModel } from "./speciality.model";
 
 export const createSpecialities: FastifyPluginAsync = async (app) => {
 	app.post<{
