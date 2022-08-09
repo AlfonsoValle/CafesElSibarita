@@ -4,6 +4,7 @@ import Prime from "./Prime";
 import Sibarita from "./Sibarita";
 import BanneronClick from "./Banneronclick";
 import BannerEspecialidades from "./BannerEspecialidades";
+import BannerSlider from "././newslider/BannerSlider";
 
 const Section = () => {
 	return (
@@ -74,14 +75,13 @@ const Section = () => {
 									justify-content: center;
 								`}
 							>
-								{" "}
 								<BanneronClick />
 							</div>
 
 							<div>
 								<div
 									css={css`
-										font-family: "montserrat", sans-serif;
+										/* font-family: "montserrat", sans-serif;
 										font-size: 18px;
 										padding: 5px;
 										display: flex;
@@ -89,13 +89,13 @@ const Section = () => {
 										white-space: nowrap;
 										border: 2px solid #eaecebc5;
 										background-color: #251721;
-										border-radius: 24px;
+										border-radius: 24px; */
 									`}
 								>
 									Nuestras Especialidades
 								</div>
 								<div>
-									<BannerEspecialidades />
+									<BannerSlider />
 								</div>
 							</div>
 						</div>

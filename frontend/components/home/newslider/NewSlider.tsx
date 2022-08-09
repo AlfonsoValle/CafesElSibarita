@@ -6,11 +6,10 @@ interface NameUrlImage {
 	image: string;
 }
 
-const Especialidades: React.FC<NameUrlImage> = ({ name, text, image }) => {
+const NewEspecialidades: React.FC<NameUrlImage> = ({ name, text, image }) => {
 	return (
 		<div
 			css={css`
-				display: flex;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -24,7 +23,7 @@ const Especialidades: React.FC<NameUrlImage> = ({ name, text, image }) => {
 					align-items: center;
 					justify-content: space-around;
 					width: 90px;
-					gap:10px;
+					gap: 10px;
 					position: relative;
 					text-align: center;
 					overflow: hidden;
@@ -68,4 +67,4 @@ const Especialidades: React.FC<NameUrlImage> = ({ name, text, image }) => {
 	);
 };
 
-export default Especialidades;
+export default NewEspecialidades;

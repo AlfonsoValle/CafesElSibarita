@@ -4,16 +4,11 @@ const SobreNosotros = () => {
 	return (
 		<section
 			css={css`
-				//height: 100vh;
-				//width: 100%;
-				//background-color: #ffffff;
-				//background-repeat: no-repeat;
-				//background-size: cover;
-				//background-position: center;
+			width: 100%;
 				background-image: url("/images/34.png");
 				background-repeat: no-repeat;
 				background-size: cover;
-				//background-position: center;
+			
 			`}
 		>
 			<div

@@ -19,7 +19,7 @@ const MainBanner: React.FC<Intro> = ({ intro }) => {
 				border: 2px solid #eaecebc5;
 				border-bottom: 0px;
 				border-radius: 50px 50px 0px 0px;
-				margin-top: 8vh;
+				margin-top: 10vh;
 				overflow: hidden;
 				min-height: 100px;
 			`}
