@@ -13,6 +13,7 @@ const Section = () => {
 				height: 100vh;
 				width: 100%;
 				background-image: url("/images/fondocafe.jpg");
+				//background-color: #c7c764;
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center;
@@ -81,15 +82,17 @@ const Section = () => {
 							<div>
 								<div
 									css={css`
-										/* font-family: "montserrat", sans-serif;
-										font-size: 18px;
+										font-family: "montserrat", sans-serif;
+										font-size: 14px;
 										padding: 5px;
 										display: flex;
 										justify-content: center;
 										white-space: nowrap;
-										border: 2px solid #eaecebc5;
-										background-color: #251721;
-										border-radius: 24px; */
+										//border: 1px solid #eaecebc5;
+										//background-color: #251721;
+										//border-radius: 10px;
+										font-weight: 500;
+										margin-bottom: 10px;
 									`}
 								>
 									Nuestras Especialidades

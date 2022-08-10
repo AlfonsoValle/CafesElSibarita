@@ -46,27 +46,20 @@ export const Login = () => {
 							align-content: center;
 							color: #f0ebe7;
 							font-weight: 400;
-							font-family: "Sirin Stencil", sans-serif;
-							font-size: 22px;
+							font-family: "Montserrat", sans-serif;
+							font-size: 15px;
 							height: 25px;
 							padding-bottom: 6px;
 							padding-left: 20px;
 							padding-right: 22px;
 							border-radius: 24px;
-							border-radius: 0px 10px 70px 0px;
+							padding: 6px 10px 6px 10px;
 							text-decoration: none;
-							border: 2px solid #eaecebc5;
-							background-color: #044b27b7;
-
-							:hover {
-								background-color: #eda543;
-							}
-
 							justify-content: center;
 							align-items: center;
 							text-align: start;
-
-							cursor: pointer;
+							border: 1px solid #eaecebc5;
+							//background-color: #7b4e118d;
 						`}
 					>
 						{user.nickname}
@@ -78,26 +71,29 @@ export const Login = () => {
 							align-content: center;
 							color: #f0ebe7;
 							font-weight: 400;
-							font-family: "Sirin Stencil", sans-serif;
-							font-size: 22px;
+							font-family: "Montserrat", sans-serif;
+							font-size: 15px;
 							height: 25px;
 							padding-bottom: 6px;
 							padding-left: 20px;
 							padding-right: 22px;
 							border-radius: 24px;
-							border-radius: 70px 0px 0px 10px;
+							border-radius: 24px;
 							text-decoration: none;
-							border: 2px solid #eaecebc5;
-							background-color: #7b4e118d;
-
+							border: 1px solid #eaecebc5;
+							background-color: #c287368d;
+							padding: 6px 10px 6px 10px;
 							justify-content: center;
 							align-items: center;
 							text-align: start;
+							:hover {
+								background-color: #a90707ab;
+							}
 
 							cursor: pointer;
 						`}
 					>
-						Cerrar Sesión
+						Salir
 					</button>
 				</div>
 			)}

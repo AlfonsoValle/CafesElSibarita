@@ -43,7 +43,6 @@ const BannerSlider: React.FC<Banderas> = ({ pais }) => {
 					justify-content: start;
 					align-items: start;
 					scroll-snap-align: center;
-					border-radius: 10px;
 					overflow: overlay;
 					max-width: 600px;
 					height: 300px;
@@ -51,7 +50,7 @@ const BannerSlider: React.FC<Banderas> = ({ pais }) => {
 					margin-right: auto;
 					gap: 10px;
 					color: black;
-					//overflow-x: scroll;
+					overflow-x: scroll;
 					scroll-snap-type: x proximity;
 				`}
 			>
@@ -59,7 +58,8 @@ const BannerSlider: React.FC<Banderas> = ({ pais }) => {
 					css={css`
 						min-width: 49%;
 						width: 280px;
-						background-color: #965d5d;
+						background-color: #e5d8a9eb;
+						border-radius: 10px;
 						scroll-snap-align: center;
 					`}
 				>
@@ -70,6 +70,8 @@ const BannerSlider: React.FC<Banderas> = ({ pais }) => {
 						css={css`
 							width: 100%;
 							height: 140px;
+							padding: 5px;
+							border-radius: 10px;
 						`}
 					></img>{" "}
 					<div
@@ -78,24 +80,23 @@ const BannerSlider: React.FC<Banderas> = ({ pais }) => {
 							line-height: 1.2em;
 							min-width: 50%;
 							margin-top: 2px;
-							background-color: #d4baba;
 							display: flex;
 							padding: 1px;
 							font-weight: 300;
 							font-family: "Montserrat";
 						`}
 					>
-						{" "}
-						Una cosa te voy a decir, dos escopetas tengo. Una cosa te voy a decir, dos
-						escopetas tengo.Una cosa te voy a decir, dos escopetas tengo.Una cosa te voy
-						a decir, dos escopetas tengo.Una cosa te voy a decir, dos escopetas tengo.
+						El café de HONDURAS es famoso por su contundente aroma, cosechado en las
+						famosas planicies de la región, cabe destacar sus tonos de sabor afrutados,
+						algo amargos y su efecto contundente a la hora despertarnos de buena mañana.
 					</div>
 				</div>
 				<div
 					css={css`
 						min-width: 49%;
 						width: 280px;
-						background-color: #965d5d;
+						background-color: #e5d8a9eb;
+						border-radius: 10px;
 						scroll-snap-align: center;
 					`}
 				>
@@ -106,41 +107,8 @@ const BannerSlider: React.FC<Banderas> = ({ pais }) => {
 						css={css`
 							width: 100%;
 							height: 140px;
-						`}
-					></img>{" "}
-					<div
-						css={css`
-							display: flex;
-							line-height: 1.2em;
-							min-width: 50%;
-							margin-top: 2px;
-							background-color: #d4baba;
-							display: flex;
-							padding: 1px;
-							font-weight: 300;
-							font-family: "Montserrat";
-						`}
-					>
-						{" "}
-						Una cosa te voy a decir, dos escopetas tengo. Una cosa te voy a decir, dos
-						escopetas tengo.Una cosa te voy a decir, dos escopetas tengo.Una cosa te voy
-						a decir, dos escopetas tengo.Una cosa te voy a decir, dos escopetas tengo.
-					</div>
-				</div><div
-					css={css`
-						min-width: 49%;
-						width: 280px;
-						background-color: #d4baba;
-						scroll-snap-align: center;
-					`}
-				>
-					{" "}
-					<img
-						src="https://countryflagsapi.com/svg/bol"
-						alt=""
-						css={css`
-							width: 100%;
-							height: 140px;
+							padding: 5px;
+							border-radius: 10px;
 						`}
 					></img>{" "}
 					<div
@@ -156,16 +124,17 @@ const BannerSlider: React.FC<Banderas> = ({ pais }) => {
 							font-family: "Montserrat";
 						`}
 					>
-						{" "}
-						Una cosa te voy a decir, dos escopetas tengo. Una cosa te voy a decir, dos
-						escopetas tengo.Una cosa te voy a decir, dos escopetas tengo.Una cosa te voy
-						a decir, dos escopetas tengo.Una cosa te voy a decir, dos escopetas tengo.
+						El café de HONDURAS es famoso por su contundente aroma, cosechado en las
+						famosas planicies de la región, cabe destacar sus tonos de sabor afrutados,
+						algo amargos y su efecto contundente a la hora despertarnos de buena mañana.
 					</div>
-				</div><div
+				</div>{" "}
+				<div
 					css={css`
 						min-width: 49%;
 						width: 280px;
-						background-color: #d4baba;
+						background-color: #e5d8a9eb;
+						border-radius: 10px;
 						scroll-snap-align: center;
 					`}
 				>
@@ -176,6 +145,8 @@ const BannerSlider: React.FC<Banderas> = ({ pais }) => {
 						css={css`
 							width: 100%;
 							height: 140px;
+							padding: 5px;
+							border-radius: 10px;
 						`}
 					></img>{" "}
 					<div
@@ -191,26 +162,29 @@ const BannerSlider: React.FC<Banderas> = ({ pais }) => {
 							font-family: "Montserrat";
 						`}
 					>
-						{" "}
-						Una cosa te voy a decir, dos escopetas tengo. Una cosa te voy a decir, dos
-						escopetas tengo.Una cosa te voy a decir, dos escopetas tengo.Una cosa te voy
-						a decir, dos escopetas tengo.Una cosa te voy a decir, dos escopetas tengo.
+						El café de HONDURAS es famoso por su contundente aroma, cosechado en las
+						famosas planicies de la región, cabe destacar sus tonos de sabor afrutados,
+						algo amargos y su efecto contundente a la hora despertarnos de buena mañana.
 					</div>
-				</div><div
+				</div>{" "}
+				<div
 					css={css`
 						min-width: 49%;
 						width: 280px;
-						background-color: #d4baba;
+						background-color: #e5d8a9eb;
+						border-radius: 10px;
 						scroll-snap-align: center;
 					`}
 				>
 					{" "}
 					<img
-						src="https://countryflagsapi.com/svg/cr"
+						src="https://countryflagsapi.com/svg/mex"
 						alt=""
 						css={css`
 							width: 100%;
 							height: 140px;
+							padding: 5px;
+							border-radius: 10px;
 						`}
 					></img>{" "}
 					<div
@@ -219,17 +193,16 @@ const BannerSlider: React.FC<Banderas> = ({ pais }) => {
 							line-height: 1.2em;
 							min-width: 50%;
 							margin-top: 2px;
-							background-color: #d4baba;
+
 							display: flex;
 							padding: 1px;
 							font-weight: 300;
 							font-family: "Montserrat";
 						`}
 					>
-						{" "}
-						Una cosa te voy a decir, dos escopetas tengo. Una cosa te voy a decir, dos
-						escopetas tengo.Una cosa te voy a decir, dos escopetas tengo.Una cosa te voy
-						a decir, dos escopetas tengo.Una cosa te voy a decir, dos escopetas tengo.
+						El café de HONDURAS es famoso por su contundente aroma, cosechado en las
+						famosas planicies de la región, cabe destacar sus tonos de sabor afrutados,
+						algo amargos y su efecto contundente a la hora despertarnos de buena mañana.
 					</div>
 				</div>
 			</div>
