@@ -1,10 +1,12 @@
 import { FastifyPluginAsync } from "fastify";
-import { AllProducts } from "./allProducts";
-import { CheckoutMutation } from "./allProducts";
-import { singleProductQuery } from "./singleProduct";
+import { AllProducts } from "./AllProducts";
+import { CheckoutMutationPrime } from "./checkoutMutationPrime";
+import { CheckoutMutationSibarita } from "./checkoutMutationSibarita";
+import {SingleProductQuery} from "./SingleProduct";
 
-export const shopifyApp: FastifyPluginAsync = async (app) => {
+export const ShopifyApp: FastifyPluginAsync = async (app) => {
 	app.register(AllProducts);
-	app.register(singleProductQuery);
-	app.register(CheckoutMutation);
+	app.register(SingleProductQuery);
+	app.register(CheckoutMutationSibarita);
+	app.register(CheckoutMutationPrime);
 };

@@ -2,14 +2,11 @@ import Shopify from "@shopify/shopify-api";
 import { FastifyPluginAsync } from "fastify";
 import { SHOPIFY_SHOP, STOREFRONT } from "../../config";
 
-export const checkoutMutation: FastifyPluginAsync = async (app) => {
+export const CheckoutMutationSibarita: FastifyPluginAsync = async (app) => {
 	// app.get('/products', {preValidation: app.authenticate}, async (req, res) => {
-	app.post<{ Body: { variantId: string } }>("/checkout", async (req, res) => {
-		//Req
-		// req.body;
-		console.log("HOLAAAAA");
-		const { variantId } = req.body;
-		console.log(req.body);
+	app.get<{ Querystring: { variantId: string } }>("/checkout01", async (req, res) => {
+		const { variantId } = req.query;
+
 		// Load the access token as per instructions above
 		const storefrontAccessToken: string = STOREFRONT;
 

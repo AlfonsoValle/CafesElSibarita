@@ -2,10 +2,9 @@ import { FastifyPluginAsync } from "fastify";
 import cors from "@fastify/cors";
 import Auth0Verify from "fastify-auth0-verify";
 import { db_plugin } from "./db";
-import {specialitiesApp} from "./routes/Specialities/SpecialitiesApp";
-import {profileApp} from "./routes/Profile/profileApp";
-import { shopifyApp } from "./routes/GraphQLApi/shopifyApp";
-
+import { profileApp } from "./routes/Profile/profileApp";
+import { ShopifyApp } from "./routes/GraphQLApi/ShopifyApp";
+import { specialitiesApp } from "./routes/Specialities/specialitiesApp";
 
 export const app: FastifyPluginAsync = async (app) => {
 	await app.register(Auth0Verify, { domain: "dev-rrewzqgm.us.auth0.com", audience: "sibarita" });
@@ -13,7 +12,7 @@ export const app: FastifyPluginAsync = async (app) => {
 	app.register(cors);
 	app.register(specialitiesApp, { prefix: "especialidades" });
 	app.register(profileApp, { prefix: "perfil" });
-	app.register(shopifyApp, { prefix: "sibarita" });
+	app.register(ShopifyApp, { prefix: "sub" });
 
 	app.get("/static", async (req, res) => {
 		return [

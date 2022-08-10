@@ -2,13 +2,12 @@ import Shopify from "@shopify/shopify-api";
 import { FastifyPluginAsync } from "fastify";
 import { SHOPIFY_SHOP, STOREFRONT } from "../../config";
 
-export const singleProductQuery: FastifyPluginAsync = async (app) => {
+export const SingleProductQuery: FastifyPluginAsync = async (app) => {
 	// app.get('/products', {preValidation: app.authenticate}, async (req, res) => {
-	app.post<{ Body: { handle: string } }>("/producto", async (req, res) => {
+	app.get<{ Querystring: { handle: string } }>("/single", async (req, res) => {
 		//Req
 		// req.body;
-		const { handle } = req.body;
-		console.log(req.body);
+		const { handle } = req.query;
 
 		// Load the access token as per instructions above
 		const Storefront: string = STOREFRONT;
