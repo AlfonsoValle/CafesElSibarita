@@ -1,10 +1,9 @@
-import React from "react";
 import { css } from "@emotion/react";
 import { CurrencyFormat } from "../../lib/CurrencyFormat";
 import Link from "next/link";
 import useSWR, { useSWRConfig } from "swr";
 
-export const CafeCard: React.FC<{ cafe: any }> = ({ cafe }) => {
+export const CafeCard: React.FC<{ cafe: any; children: any }> = ({ cafe, children }) => {
 	const { mutate } = useSWRConfig();
 	return (
 		<div
@@ -36,15 +35,7 @@ export const CafeCard: React.FC<{ cafe: any }> = ({ cafe }) => {
 					<h4>{CurrencyFormat(cafe.priceRange.minVariantPrice.amount)}</h4>
 				</div>
 			</div>
-
-			<button
-				onClick={() => {
-					mutate("/sibarita/checkout");
-				}}
-			>
-				
-				Comprar
-			</button>
+			{children}
 		</div>
 	);
 };

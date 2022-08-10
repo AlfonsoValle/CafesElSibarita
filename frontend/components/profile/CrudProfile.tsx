@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { ButtonForm } from "./ButtonForm";
 import { css } from "@emotion/react";
 import { useState } from "react";
-import { CreateProfile } from "../../lib/Profilerepo";
+import { CreateProfile } from "../../lib/ProfileRepo";
 
 export const PerfilCrud = () => {
 	const [name, setname] = useState("");

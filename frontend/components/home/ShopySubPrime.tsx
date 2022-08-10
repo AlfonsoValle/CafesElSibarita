@@ -2,14 +2,15 @@ import { CafeCard } from "./ShopyCafeCard";
 import { css } from "@emotion/react";
 import useSWR from "swr";
 import { Spinner } from "../shared/Spinner";
-import { useToken } from "../../lib/tokencontext";
+import { CheckoutPrime } from "../subs/CheckoutPrime";
 
-export const CafeList = () => {
-	const { data } = useSWR("/sibarita", {
+export const SubPrime = () => {
+	const { data } = useSWR("/sub/single?handle=suscripcion-prime", {
 		refreshInterval: 5000,
 	});
 
-	const cafeData = data?.data.products.edges;
+	const cafeData = data?.data.productByHandle;
+	const variantIdPrime = cafeData?.variants.edges[0].node.id;
 	console.log(cafeData);
 	return (
 		<div
@@ -31,8 +32,10 @@ export const CafeList = () => {
 				backdrop-filter: blur(6px);
 			`}
 		>
-			{cafeData?.length > 0 ? (
-				cafeData.map((edge, index) => <CafeCard cafe={edge.node} key={index} />)
+			{cafeData != undefined ? (
+				<CafeCard cafe={cafeData}>
+					<CheckoutPrime variantId={variantIdPrime} />
+				</CafeCard>
 			) : (
 				<Spinner />
 			)}

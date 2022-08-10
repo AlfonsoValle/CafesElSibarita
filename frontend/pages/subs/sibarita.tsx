@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { CafeList } from "../../components/home/ShopyCafeList";
+import { SubSibarita } from "../../components/home/ShopySubSibarita";
 
 const SuscripcionSibarita = () => {
 	return (
@@ -27,7 +27,7 @@ const SuscripcionSibarita = () => {
 					height: 100vh;
 				`}
 			>
-				<CafeList />
+				<SubSibarita />
 			</div>
 		</section>
 	);
