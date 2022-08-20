@@ -4,14 +4,13 @@ import { injectGlobal } from "@emotion/css";
 import { Footer } from "./Footer";
 
 injectGlobal`
-    @import url('https://fonts.googleapis.com/css?family=Life+Savers:wght@400;700;800&display=swap');
-
+    @import url('https://fonts.googleapis.com/css?family=Life+Savers:wght@400;700;800&display=swap&family=Montserrat:wght@400;700;800&display=swap&family=Open+Sans:wght@400;700;800&display=swap&family=Roboto:wght@400;700;800&display=swap&family=Roboto+Condensed:wght@400;700;800&display=swap&family=Roboto+Slab:wght@400;700;800&display=swap&family=Source+Sans+Pro:wght@400;700;800&display=swap&family=Titillium+Web:wght@400;700;800&display=swap&family=Ubuntu:wght@400;700;800&display=swap&family=Work+Sans:wght@400;700;800&display=swap&family=Zilla+Slab:wght@400;700;800&display=swap&family=Zilla+Slab+Highlight:wght@400;700;800&display=swap ');
 
 
     
     body{
 	
-  font-family: "montserrat", sans-serif;
+  font-family: "montserrat";
   font-weight: 800;
   line-height: 1;
   color: #ffffff;

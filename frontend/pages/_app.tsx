@@ -14,15 +14,18 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 	}, []);
 
 	return (
-		<SWRConfig value={{ fetcher: PublicFetcher }}>
-			<Head>
-				<title>Cafes El Sibarita</title>
-			</Head>
+		<>
 			<GlobalStyles />
-			<Layout>
-				<Component {...pageProps} />
-			</Layout>
-		</SWRConfig>
+			<SWRConfig value={{ fetcher: PublicFetcher }}>
+				<Head>
+					<title>Cafes El Sibarita</title>
+				</Head>
+
+				<Layout>
+					<Component {...pageProps} />
+				</Layout>
+			</SWRConfig>
+		</>
 	);
 };
 

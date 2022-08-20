@@ -10,7 +10,7 @@ export const LateralMenu = () => {
 			`}
 		>
 			<Login />
-			<ShoppingCart />
+			
 		</div>
 	);
 };

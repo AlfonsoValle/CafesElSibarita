@@ -3,7 +3,6 @@ import MainBanner from "./MainBanner";
 import Prime from "./Prime";
 import Sibarita from "./Sibarita";
 import BanneronClick from "./Banneronclick";
-import BannerEspecialidades from "./BannerEspecialidades";
 import BannerSlider from "././newslider/BannerSlider";
 
 const Section = () => {
@@ -13,7 +12,6 @@ const Section = () => {
 				height: 100vh;
 				width: 100%;
 				background-image: url("/images/fondocafe.jpg");
-				//background-color: #c7c764;
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center;
@@ -62,24 +60,6 @@ const Section = () => {
 							/>
 						</div>
 
-						<div
-							css={css`
-								display: flex;
-								margin-top: 8vh;
-								justify-content: space-around;
-							`}
-						>
-							<div
-								css={css`
-									display: flex;
-									align-items: center;
-									justify-content: center;
-								`}
-							>
-								<BanneronClick />
-							</div>
-
-							<div>
 								<div
 									css={css`
 										font-family: "montserrat", sans-serif;
@@ -88,11 +68,10 @@ const Section = () => {
 										display: flex;
 										justify-content: center;
 										white-space: nowrap;
-										//border: 1px solid #eaecebc5;
-										//background-color: #251721;
-										//border-radius: 10px;
 										font-weight: 500;
-										margin-bottom: 10px;
+										margin-top: 60px;
+										margin-bottom: 20px;
+										
 									`}
 								>
 									Nuestras Especialidades
@@ -103,8 +82,8 @@ const Section = () => {
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
+				
+			
 		</section>
 	);
 };

@@ -11,9 +11,9 @@ const Socials = () => {
 				cursor: pointer;
 			`}
 		>
-			<Image src="/images/facebook.svg" width="35px" height="35px" />
-			<Image src="/images/instagram.svg" width="35px" height="35px" />
-			<Image src="/images/twitter.svg" width="35px" height="35px" />
+			<Image src="/images/facebook.svg" width="25px" height="25px" />
+			<Image src="/images/instagram.svg" width="25px" height="25px" />
+			<Image src="/images/twitter.svg" width="25px" height="25px" />
 		</div>
 	);
 };

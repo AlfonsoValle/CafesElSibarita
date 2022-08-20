@@ -5,8 +5,8 @@ class MyDocument extends Document {
 		return (
 			<Html>
 				<Head>
+					<style></style>
 					<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-					
 				</Head>
 				<body>
 					<Main />

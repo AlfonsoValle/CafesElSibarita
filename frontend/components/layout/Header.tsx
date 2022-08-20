@@ -3,7 +3,7 @@ import { MainMenu } from "./MainMenu";
 import { LateralMenu } from "./LateralMenu";
 import { HeaderButton } from "./HeaderButton";
 import { TokenApp } from "../shared/TokenApp";
-import { BotonPrueba } from "../tailwind components/botonprueba";
+import { BotonHeader } from "../tailwind components/BotonHeader";
 
 export const Header = () => {
 	return (
@@ -27,7 +27,8 @@ export const Header = () => {
 							display: flex;
 						`}
 					>
-						<BotonPrueba text="Editar Especialidades" href="/editarespecialidades" />
+						<BotonHeader text="Sobre Nosotros" href="/sobrenosotros" />
+						<BotonHeader text="Editar Especialidades" href="/editarespecialidades" />
 						<LateralMenu />
 					</div>
 				</div>

@@ -1,6 +1,6 @@
 import { HeaderButton } from "./HeaderButton";
 import { css } from "@emotion/react";
-import Loguito from "./Logo";
+import Logo from "./Logo";
 
 
 export const MainMenu = () => {
@@ -12,8 +12,8 @@ export const MainMenu = () => {
 				align-items: center;
 			`}
 		>
-			<Loguito/>
-			<HeaderButton href="/" text="Cafés el Sibarita"></HeaderButton>
+			<Logo href="/" />
+		
 			
 		</div>
 	);
