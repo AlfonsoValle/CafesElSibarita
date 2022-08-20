@@ -4,7 +4,6 @@ import { specialityModel } from "./speciality.model";
 export const createSpecialities: FastifyPluginAsync = async (app) => {
 	app.post<{
 		Body: {
-			auth0id: string;
 			name: string;
 			text: string;
 			image: string;
@@ -12,10 +11,10 @@ export const createSpecialities: FastifyPluginAsync = async (app) => {
 	}>("/createSpecialities", async (req, res) => {
 		const data = req.body;
 		req.log.info("Output");
-		const { auth0id, name, text, image } = data;
+		const {name, text, image } = data;
 
 		const doc = await specialityModel.create({
-			auth0id,
+			
 			name,
 			text,
 			image,
