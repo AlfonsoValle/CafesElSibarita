@@ -59,7 +59,7 @@ export const Login = () => {
 							align-items: center;
 							text-align: start;
 							border: 1px solid #eaecebc5;
-							//background-color: #7b4e118d;
+							
 						`}
 					>
 						{user.nickname}

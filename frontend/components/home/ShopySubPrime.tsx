@@ -16,18 +16,19 @@ export const SubPrime = () => {
 		<div
 			css={css`
 				font-family: "montserrat";
-				font-size: 29px;
-				color: #000000;
+				padding: 20px;
+				font-size: 25px;
 				font-weight: bold;
-				width: 400px;
-				height: 100vh;
+				width: 85%;
+				height: 80%;
+				border-radius: 10px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				background: linear-gradient(
 					1deg,
-					rgba(255, 255, 255, 0.1),
-					rgba(255, 255, 255, 0.1)
+					rgba(255, 253, 253, 0.382),
+					rgba(217, 211, 211, 0.227)
 				);
 				backdrop-filter: blur(6px);
 			`}

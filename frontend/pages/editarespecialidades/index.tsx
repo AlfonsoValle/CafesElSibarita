@@ -3,6 +3,7 @@ import { CrudEspecialidades } from "../../components/Admin/SpecialityCrud";
 import { useEffect, useRef } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { AuthenticatedApp } from "../../components/shared/AuthenticatedApp";
+import { SpecialityForm } from "../../components/Admin/SpecialityForm";
 
 const EditarEspecialidades = () => {
 	return (
@@ -38,6 +39,7 @@ const EditarEspecialidades = () => {
 			>
 				<AuthenticatedApp>
 					<CrudEspecialidades />
+					{/* <SpecialityForm/> */}
 				</AuthenticatedApp>
 			</div>
 		</section>

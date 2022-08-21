@@ -14,13 +14,14 @@ const BannerSlider: React.FC = () => {
 					align-items: start;
 					scroll-snap-align: center;
 					overflow: overlay;
-					max-width: 90%;
-					height: 300px;
-					margin-left: auto;
-					margin-right: auto;
+
+					padding-bottom: 22px;
+					scroll-snap-type: x proximity;
+					width: 100%;
+					height: 80%;
+					max-height: 220px;
 					gap: 10px;
 					color: white;
-					scroll-snap-type: x proximity;
 					border-radius: 10px;
 				`}
 			>
@@ -28,10 +29,12 @@ const BannerSlider: React.FC = () => {
 					data.map((item) => (
 						<div
 							css={css`
-								min-width: 30%;
-								width: 280px;
+								min-width: 33%;
+								width: 33%;
+								height: 100%;
 								border-radius: 10px;
-								scroll-snap-align: center;
+								align-items: stretch;
+								scroll-snap-align: start;
 								background-color: #ffffff24;
 								backdrop-filter: blur(20px);
 								border: 1px solid #ffffffad;
@@ -41,10 +44,9 @@ const BannerSlider: React.FC = () => {
 								css={css`
 									text-align: justify;
 									line-height: 1.3em;
-									min-width: 50%;
 									margin-top: 2px;
 									display: flex;
-									padding: 30px;
+									padding: 15px;
 									font-weight: 400;
 									font-family: "Montserrat";
 									display: inline-block;
@@ -54,7 +56,7 @@ const BannerSlider: React.FC = () => {
 									src={item.image}
 									alt=""
 									css={css`
-										width: 40%;
+										width: 30%;
 										height: 90px;
 										float: left;
 										object-fit: cover;

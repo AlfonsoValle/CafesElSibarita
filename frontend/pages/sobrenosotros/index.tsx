@@ -4,15 +4,16 @@ const SobreNosotros = () => {
 	return (
 		<section
 			css={css`
-			width: 100%;
+				height: 100vh;
+				width: 100%;
 				background-image: url("/images/34.png");
 				background-repeat: no-repeat;
 				background-size: cover;
-			
 			`}
 		>
 			<div
 				css={css`
+					height: 100vh;
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -22,7 +23,6 @@ const SobreNosotros = () => {
 						rgba(58, 53, 50, 0.847) 0%,
 						rgba(138, 100, 47, 0.497) 100%
 					);
-					height: 100vh;
 				`}
 			>
 				{" "}

@@ -12,23 +12,23 @@ const Prime: React.FC<NameDescriptionRoute> = ({ name, description, href }) => {
 		<Link href={href}>
 			<a
 				css={css`
-					min-width: 0%;
 					width: 50%;
 					font-family: "montserrat", sans-serif;
 					font-style: italic;
 					color: #fefefe;
+					padding: 5px;
 					background: linear-gradient(90deg, rgba(30, 73, 36, 1) 70%, #006d0f 100%);
 					border: 2px solid #eaecebc5;
 					border-right: 0px;
 					padding-bottom: 9px;
-					border-radius: 0px 0px 0px 50px;
+					border-radius: 0px 0px 0px 40px;
 					clip-path: polygon(0% 0%, 91% 0, 100% 50%, 91% 100%, 0% 100%);
 					cursor: pointer;
 				`}
 			>
 				<div
 					css={css`
-						font-size: 40px;
+						font-size: 20px;
 						color: #ffffff;
 						font-weight: 500;
 					`}

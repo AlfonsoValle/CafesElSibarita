@@ -3,7 +3,6 @@ import { Botonformulario } from "./Botondeformulario";
 import { css } from "@emotion/react";
 import { CreateSpeciality } from "../../lib/SpecialityRepo";
 import tw from "twin.macro";
-
 const Pais = [
 	{ code: "AD", pais: "Andorra" },
 	{ code: "AE", pais: "Emiratos Árabes Unidos" },
@@ -247,7 +246,7 @@ const Pais = [
 	{ code: "ZA", pais: "Sudáfrica" },
 ];
 
-export const CrudEspecialidades = () => {
+export const SpecialityForm = () => {
 	const {
 		register,
 		handleSubmit,
@@ -264,78 +263,32 @@ export const CrudEspecialidades = () => {
 	};
 
 	return (
-		<div
-			css={css`
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				width: 500px;
-				height: 500px;
-				border: 1px solid white;
-				padding-bottom: 20px;
-			`}
-		>
-			{" "}
-			Introduce una Nueva Especialidad
-			<div
-				css={css`
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-					padding-top: 20px;
-				`}
-			>
-				<label className="form-label">Nombre de la Especialidad: </label>
-				<div
-					css={css`
-						color: black;
-					`}
+		<div>
+			<div>
+				<label
+					htmlFor="small-input"
+					className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
 				>
-					<input
-						type="text"
-						className="form-control"
-						placeholder="País de procedencia"
-						{...register("name")}
-					/>
-				</div>
+					Nombre de la Nueva Especialidad
+				</label>
+				<input
+					type="text"
+					id="small-input"
+					tw="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+				/>
 			</div>
-			<div
-				css={css`
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-				`}
-			>
-				<label className="form-label"> Descripción: </label>
-				<div
-					css={css`
-						color: black;
-						//min-width: 200px;
-						height: 30px;
-					`}
+			<div className="mb-6">
+				<label
+					htmlFor="large-input"
+					className="block mb-8 text-sm font-medium text-gray-900 dark:text-gray-300"
 				>
-					<input
-						className="form-control"
-						type="text"
-						placeholder="Detalles del café"
-						{...register("text")}
-					/>
-				</div>
-			</div>
-			<div
-				css={css`
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-				`}
-			>
-				<Botonformulario onClick={submit} variant={isSubmitted ? "done" : "pending"}>
-					Guardar Especialidad "{name}"
-				</Botonformulario>
+					Descripción de la Especialidad
+				</label>
+				<input
+					type="text"
+					id="large-input"
+					tw="block p-9 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-base focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+				/>
 			</div>
 		</div>
 	);

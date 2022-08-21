@@ -1,4 +1,9 @@
+import tw from "twin.macro"
+
+
+
 export const Botonformulario: React.FC<{
+
 	variant?: "done" | "pending";
 	children: any;
 	onClick?: any;

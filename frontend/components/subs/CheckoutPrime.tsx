@@ -1,3 +1,4 @@
+import { css } from "@emotion/react";
 import useSWR from "swr";
 
 export const CheckoutPrime = ({ variantId }) => {
@@ -5,9 +6,23 @@ export const CheckoutPrime = ({ variantId }) => {
 	const url = data?.data.checkoutCreate.checkout.webUrl;
 
 	return (
-		<div tw="flex flex-col justify-center items-center w-full h-screen">
+		<div
+			css={css`
+				color: white;
+				border: 1px solid white;
+				border-radius: 25px;
+				background-color: green;
+				width: 200px;
+				font-weight: 200;
+				padding: 5px;
+				margin-top: 25px;
+				:hover {
+					background-color: #062b06;
+				}
+			`}
+		>
 			<a href={url} target="_blank">
-				Comprar WOLOLOOO
+				Comprar
 			</a>
 		</div>
 	);

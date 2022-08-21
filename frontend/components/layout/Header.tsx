@@ -13,7 +13,7 @@ export const Header = () => {
 					css={css`
 						display: flex;
 						justify-content: space-between;
-						width: 100%;
+						width: 99%;
 						align-items: center;
 						position: fixed;
 						z-index: 2;

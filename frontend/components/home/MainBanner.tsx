@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import BannerDecorativo from "./BannerDecorativo";
+
 interface Intro {
 	intro: string;
 }
@@ -9,30 +9,41 @@ const MainBanner: React.FC<Intro> = ({ intro }) => {
 		<section
 			css={css`
 				font-family: "montserrat", sans-serif;
-				font-size: 30px;
+				font-size: 20px;
 				background: linear-gradient(
 					180deg,
 					rgba(186, 158, 113, 1) 0%,
 					rgba(214, 206, 175, 1) 99%
 				);
 				display: flex;
+				align-items: center;
+				justify-content: center;
+				line-height: 1.2em;
+				font-weight: 400;
 				border: 2px solid #eaecebc5;
 				border-bottom: 0px;
-				border-radius: 50px 50px 0px 0px;
-				margin-top: 10vh;
+				border-radius: 40px 40px 0px 0px;
+				margin-top: 12vh;
 				overflow: hidden;
-				min-height: 100px;
+				max-height: 55%;
 			`}
 		>
-			<BannerDecorativo />
+			<img
+				src="/images/decorativo.png"
+				css={css`
+					width: 15%;
+				`}
+			/>
+
 			<div
 				css={css`
-					padding-left: 25px;
-					padding-right: 25px;
+					padding-left: 20px;
+					padding-right: 20px;
 					padding-top: 10px;
 					padding-bottom: 10px;
 					color: #020202;
-					font-weight: 500;
+					font-weight: 400;
+					width: 85%;
 				`}
 			>
 				{intro}

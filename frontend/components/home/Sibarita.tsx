@@ -9,50 +9,47 @@ interface NameDescriptionRoute {
 
 const Sibarita: React.FC<NameDescriptionRoute> = ({ name, description, href }) => {
 	return (
-		
-<Link href={href}>
-		
-		<a
-			css={css`
-				font-family: "montserrat", sans-serif;
-				font-style: italic;
-				min-width: 0%;
-				width: 50%;
-				cursor: pointer;
-				background: linear-gradient(
-					90deg,
-					rgba(231, 178, 21, 1) 0%,
-					rgba(64, 48, 1, 1) 140%
-				);
-				border: 2px solid #eaecebc5;
-				border-radius: 0px 0px 50px 0px;
-				clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 9% 50%);
-			`}
-		>
-			<div
+		<Link href={href}>
+			<a
 				css={css`
-					font-size: 40px;
-					color: #000000;
-					font-weight: 600;
+					width: 50%;
+					font-family: "montserrat", sans-serif;
+					font-style: italic;
+					padding: 5px;
+					cursor: pointer;
+					background: linear-gradient(
+						90deg,
+						rgba(231, 178, 21, 1) 0%,
+						rgba(64, 48, 1, 1) 140%
+					);
+					border: 2px solid #eaecebc5;
+					border-radius: 0px 0px 40px 0px;
+					clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 9% 50%);
 				`}
 			>
-				{name}
-			</div>
-			<div
-				css={css`
-					font-size: 15px;
-					font-weight: 100;
-					padding-top: 1.5%;
-					padding-right: 5%;
-					padding-left: 12%;
-					color: #000000;
-					font-weight: 600;
-				`}
-			>
-				{description}
-			</div>
-		
-		</a>
+				<div
+					css={css`
+						font-size: 20px;
+						color: #000000;
+						font-weight: 600;
+					`}
+				>
+					{name}
+				</div>
+				<div
+					css={css`
+						font-size: 15px;
+						font-weight: 100;
+						padding-top: 1.5%;
+						padding-right: 5%;
+						padding-left: 12%;
+						color: #000000;
+						font-weight: 600;
+					`}
+				>
+					{description}
+				</div>
+			</a>
 		</Link>
 	);
 };
