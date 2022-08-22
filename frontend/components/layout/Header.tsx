@@ -1,7 +1,6 @@
 import { css } from "@emotion/react";
 import { MainMenu } from "./MainMenu";
 import { LateralMenu } from "./LateralMenu";
-import { HeaderButton } from "./HeaderButton";
 import { TokenApp } from "../shared/TokenApp";
 import { BotonHeader } from "../tailwind components/BotonHeader";
 
@@ -12,23 +11,40 @@ export const Header = () => {
 				<div
 					css={css`
 						display: flex;
-						justify-content: space-between;
-						width: 99%;
 						align-items: center;
+						width: 100%;
 						position: fixed;
 						z-index: 2;
 					`}
 				>
-					{" "}
-					<MainMenu />
 					<div
 						css={css`
-							margin-right: 5px;
+							width: 26%;
+						`}
+					>
+						<MainMenu />
+					</div>
+					<div
+						css={css`
 							display: flex;
+							align-items: center;
+							justify-content: space-around;
+							gap: 5px;
+							width: 65%;
+							white-space: nowrap;
 						`}
 					>
 						<BotonHeader text="Sobre Nosotros" href="/sobrenosotros" />
 						<BotonHeader text="Editar Especialidades" href="/editarespecialidades" />
+					</div>
+					<div
+						css={css`
+							margin-right: 5px;
+							display: flex;
+							justify-content: end;
+							width: 35%;
+						`}
+					>
 						<LateralMenu />
 					</div>
 				</div>

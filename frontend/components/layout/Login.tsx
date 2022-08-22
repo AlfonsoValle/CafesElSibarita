@@ -15,33 +15,6 @@ export const Login = () => {
 				<span
 					onClick={() => loginWithRedirect()}
 					css={css`
-						display: flex;
-						color: #f0ebe7;
-						font-weight: 400;
-						font-family: "Montserrat", sans-serif;
-						font-size: 18px;
-						margin-right: 10px;
-						:hover {
-							color: #eda543;
-						}
-
-						align-items: center;
-
-						cursor: pointer;
-					`}
-				>
-					Identifícate
-				</span>
-			)}
-			{user && (
-				<div
-					css={css`
-						display: flex;
-						flex-direction: row;
-					`}
-				>
-					<button
-						css={css`
 							display: flex;
 							align-content: center;
 							color: #f0ebe7;
@@ -53,17 +26,47 @@ export const Login = () => {
 							padding-left: 20px;
 							padding-right: 22px;
 							border-radius: 24px;
-							padding: 6px 10px 6px 10px;
+							border-radius: 24px;
 							text-decoration: none;
+							border: 1px solid #eaecebc5;
+							background-color: #c28836d8;
+							padding: 6px 10px 6px 10px;
 							justify-content: center;
 							align-items: center;
 							text-align: start;
-							border: 1px solid #eaecebc5;
+							:hover {
+								background-color: #034d0ace;
+							}
+
+							cursor: pointer;
+						`}
+				>
+					Identifícate
+				</span>
+			)}
+			{user && (
+				<div
+					css={css`
+						display: flex;
+						flex-direction: row;
+					`}
+				>
+					<p
+						css={css`
+							display: flex;
+							font-family: "Montserrat";
+							font-weight: 200;
+							font-size: 15px;
+							padding: 6px 10px 6px 0px;
+							text-decoration: none;
+							align-items: center;
+							text-align: start;
+							white-space: nowrap;
 							
 						`}
 					>
-						{user.nickname}
-					</button>
+						Bienvenid@ - {user.nickname}
+					</p>
 					<button
 						onClick={() => logout({ returnTo: window.location.origin })}
 						css={css`
@@ -81,7 +84,7 @@ export const Login = () => {
 							border-radius: 24px;
 							text-decoration: none;
 							border: 1px solid #eaecebc5;
-							background-color: #c287368d;
+							background-color: #c28836ef;
 							padding: 6px 10px 6px 10px;
 							justify-content: center;
 							align-items: center;

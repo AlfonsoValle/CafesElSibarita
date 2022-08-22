@@ -3,6 +3,8 @@ import MainBanner from "./MainBanner";
 import Prime from "./Prime";
 import Sibarita from "./Sibarita";
 import BannerSlider from "././newslider/BannerSlider";
+import MainHeaderText from "./MainHeaderText";
+
 
 const Section = () => {
 	return (
@@ -31,9 +33,14 @@ const Section = () => {
 					);
 				`}
 			>
+				<MainHeaderText />
 				<div
 					css={css`
-						height: 45%;
+						height: 50%;
+						display: flex;
+						flex-direction: column;
+						justify-content: end;
+						align-items: center;
 					`}
 				>
 					<div
@@ -65,20 +72,25 @@ const Section = () => {
 				</div>
 				<div
 					css={css`
-						height: 55%;
+						height: 50%;
+						display: flex;
+						flex-direction: column;
+						justify-content: start;
+						align-items: center;
+				
 					`}
 				>
 					<div
 						css={css`
-							font-family: "montserrat", sans-serif;
-							font-size: 20px;
+							font-family: "Dancing Script";
+							font-size: 30px;
 							padding: 5px;
 							display: flex;
 							justify-content: center;
 							white-space: nowrap;
-							font-weight: 500;
-							margin-top: 60px;
-							margin-bottom: 20px;
+							font-weight: 400;
+							
+							
 						`}
 					>
 						Nuestras Especialidades

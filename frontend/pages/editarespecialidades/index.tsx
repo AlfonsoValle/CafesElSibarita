@@ -1,48 +1,51 @@
 import { css } from "@emotion/react";
-import { CrudEspecialidades } from "../../components/Admin/SpecialityCrud";
+import { CrearEspecialidades } from "../../components/Admin/CreateSpeciality";
 import { useEffect, useRef } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { AuthenticatedApp } from "../../components/shared/AuthenticatedApp";
-import { SpecialityForm } from "../../components/Admin/SpecialityForm";
+import { BorrarEspecialidades } from "../../components/Admin/DeleteSpeciality";
 
-const EditarEspecialidades = () => {
+const CrudEspecialidades = () => {
 	return (
 		<section
-			css={css`
-				height: 100vh;
-				width: 100%;
-				background-image: url("/images/fondocafe.jpg");
-				background-repeat: no-repeat;
-				background-size: cover;
-				background-position: center;
-				display: flex;
-				flex-direction: column;
-			`}
+		css={css`
+		height: 100vh;
+		width: 100%;
+		background-image: url("/images/34.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	`}
 		>
 			<div
 				css={css`
-					background: rgb(5, 2, 0);
-					background: linear-gradient(
-						180deg,
-						rgba(5, 2, 0, 0.8472693520767682) 0%,
-						rgba(0, 0, 0, 0.4971292960543593) 100%
-					);
-					height: 100vh;
-					display: flex;
-					padding-left: 200px;
-					padding-right: 200px;
-					white-space: nowrap;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-				`}
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: rgb(5, 2, 0);
+				background: linear-gradient(
+					180deg,
+					rgba(58, 53, 50, 0.847) 0%,
+					rgba(138, 100, 47, 0.497) 100%
+				);
+			`}
 			>
-				<AuthenticatedApp>
-					<CrudEspecialidades />
-					{/* <SpecialityForm/> */}
-				</AuthenticatedApp>
+				<div
+					css={css`
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 100%;
+						gap: 40px;
+					`}
+				>
+					<AuthenticatedApp>
+						<CrearEspecialidades />
+						<BorrarEspecialidades />
+					</AuthenticatedApp>
+				</div>
 			</div>
 		</section>
 	);
 };
-export default EditarEspecialidades;
+export default CrudEspecialidades;

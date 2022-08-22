@@ -4,14 +4,14 @@ import { injectGlobal } from "@emotion/css";
 import { Footer } from "./Footer";
 
 injectGlobal`
-    @import url('https://fonts.googleapis.com/css?family=Life+Savers:wght@400;700;800&display=swap&family=Montserrat:wght@400;700;800&display=swap&family=Open+Sans:wght@400;700;800&display=swap&family=Roboto:wght@400;700;800&display=swap&family=Roboto+Condensed:wght@400;700;800&display=swap&family=Roboto+Slab:wght@400;700;800&display=swap&family=Source+Sans+Pro:wght@400;700;800&display=swap&family=Titillium+Web:wght@400;700;800&display=swap&family=Ubuntu:wght@400;700;800&display=swap&family=Work+Sans:wght@400;700;800&display=swap&family=Zilla+Slab:wght@400;700;800&display=swap&family=Zilla+Slab+Highlight:wght@400;700;800&display=swap ');
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script:wght@400;500;600;700&family=Life+Savers:wght@400;700;800&family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;700;800&family=Roboto:wght@400;700;800&family=Roboto+Condensed:wght@400;700;800&family=Roboto+Slab:wght@400;700;800&family=Source+Sans+Pro:wght@400;700;800&family=Titillium+Web:wght@400;700;800&family=Ubuntu:wght@400;700;800&family=Work+Sans:wght@400;700;800&family=Zilla+Slab:wght@400;700;800&family=Zilla+Slab+Highlight:wght@400;700;800&display=swap');
 
 
     
     body{
 	
   font-family: "montserrat";
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1;
   color: #ffffff;
         margin:0;

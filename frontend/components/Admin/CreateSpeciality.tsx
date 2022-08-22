@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { Botonformulario } from "./Botondeformulario";
 import { css } from "@emotion/react";
 import { CreateSpeciality } from "../../lib/SpecialityRepo";
+import { useState } from "react";
 import tw from "twin.macro";
 
 const Pais = [
@@ -247,7 +248,8 @@ const Pais = [
 	{ code: "ZA", pais: "Sudáfrica" },
 ];
 
-export const CrudEspecialidades = () => {
+export const CrearEspecialidades = () => {
+	
 	const {
 		register,
 		handleSubmit,
@@ -266,31 +268,49 @@ export const CrudEspecialidades = () => {
 	return (
 		<div
 			css={css`
-				display: flex;
-				flex-direction: column;
+				border: 1px solid #ffffffad;
+				font-size: 17px;
+				border-radius: 10px;
+				font-weight: 300;
+				max-width: 300px;
 				align-items: center;
 				justify-content: center;
-				width: 500px;
-				height: 500px;
-				border: 1px solid white;
-				padding-bottom: 20px;
+				background-color: #98694f38;
+				padding: 20px;
+				line-height: 1.6em;
+				backdrop-filter: blur(20px);
 			`}
 		>
-			{" "}
-			Introduce una Nueva Especialidad
+			<h1
+				css={css`
+					display: flex;
+					font-family: "Montserrat";
+					font-weight: 600;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+
+					padding: 10px;
+				`}
+			>
+				{" "}
+				Introduce una Nueva Especialidad{" "}
+			</h1>
 			<div
 				css={css`
 					display: flex;
 					flex-direction: column;
 					align-items: center;
 					justify-content: center;
-					padding-top: 20px;
+					padding: 10px;
+					font-weight: 400;
 				`}
 			>
-				<label className="form-label">Nombre de la Especialidad: </label>
+				<label className="form-label">Nombre del País </label>
 				<div
 					css={css`
 						color: black;
+						padding: 5px;
 					`}
 				>
 					<input
@@ -307,35 +327,47 @@ export const CrudEspecialidades = () => {
 					flex-direction: column;
 					align-items: center;
 					justify-content: center;
+					font-weight: 400;
 				`}
 			>
-				<label className="form-label"> Descripción: </label>
+				<label className="form-label"> Descripción </label>
 				<div
 					css={css`
 						color: black;
-						//min-width: 200px;
+						padding: 5px;
+						margin-bottom: 100px;
 						height: 30px;
 					`}
 				>
-					<input
+					<textarea
+						css={css`
+							color: black;
+							padding: 5px;
+							margin-bottom: 20px;
+							height: 100px;
+							width: 250px;
+						`}
 						className="form-control"
-						type="text"
-						placeholder="Detalles del café"
+						placeholder="El café de X es..."
 						{...register("text")}
-					/>
+					></textarea>
 				</div>
-			</div>
-			<div
-				css={css`
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-				`}
-			>
-				<Botonformulario onClick={submit} variant={isSubmitted ? "done" : "pending"}>
-					Guardar Especialidad "{name}"
-				</Botonformulario>
+				<div
+					css={css`
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						border-radius: 25px;
+						border: 1px solid white;
+						padding: 5px;
+						background-color: #105e02d5;
+					`}
+				>
+					<Botonformulario onClick={submit} variant={isSubmitted ? "done" : "pending"}>
+						Guardar Especialidad "{name}"
+					</Botonformulario>
+				</div>
 			</div>
 		</div>
 	);

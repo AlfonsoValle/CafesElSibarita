@@ -23,7 +23,7 @@ const MainBanner: React.FC<Intro> = ({ intro }) => {
 				border: 2px solid #eaecebc5;
 				border-bottom: 0px;
 				border-radius: 40px 40px 0px 0px;
-				margin-top: 12vh;
+				margin-top: 2vh;
 				overflow: hidden;
 				max-height: 55%;
 			`}
@@ -31,7 +31,7 @@ const MainBanner: React.FC<Intro> = ({ intro }) => {
 			<img
 				src="/images/decorativo.png"
 				css={css`
-					width: 15%;
+					width: 10%;
 				`}
 			/>
 

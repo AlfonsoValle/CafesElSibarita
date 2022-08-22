@@ -11,3 +11,8 @@ export const CreateSpeciality = async (data: ISpeciality) => {
 	console.log(res.data);
 	return res.data;
 };
+
+export const DeleteSpeciality = async (_id) => {
+	const res = await Specialitytobackend.delete(`especialidades/deleteSpecialities/${_id}`);
+	return res.data;
+ };
