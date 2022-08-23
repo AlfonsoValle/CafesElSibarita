@@ -1,24 +1,73 @@
 <div align="center" >
 
-# CAFÉS EL SIBARITA
+# ☕ CAFÉS EL SIBARITA ☕
 
 <img title="" src="https://i.imgur.com/NCqrI7f.png" alt="logoSibarita.png" width="80" data-align="center">
 
+</div> 
+<br>
+
+<div align="center" >
+
+## **Indication of the Technologies Used**
+<br>
+
+![Esta es una imagen](https://img.shields.io/badge/-YARN-brightgreen?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-NODE.JS-red?style=plastic)
+
+
+![Esta es una imagen](https://img.shields.io/badge/-NEXT.JS-inactive?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-FASTIFY-orange?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-REACT-critical?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-TYPESCRIPT-blue?style=plastic)
+
+
+![Esta es una imagen](https://img.shields.io/badge/-EMOTION-ff69b4?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-TAILWIND-ff69b4?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-TWINMACRO-ff69b4?style=plastic)
+
+
+
+
+![Esta es una imagen](https://img.shields.io/badge/-NODEMON-critical?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-SHOPIFY-brightgreen?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-GRAPHQL-important?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-MONGODB-success?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-AUTH0-darkgrey?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-AXIOS-blue?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-SWR-blue?style=plastic)
+
+>
+![Esta es una imagen](https://img.shields.io/badge/POWERED%20BY-CAFFEINE-orange?style=for-the-badge)
+
 </div>
 
-- **Why to choose a Shop?**
-  After having worked creating two stores with Prestashop and Wordpress without programming. This project seemed practical, useful and an interesting experience for a junior developer.
+-   **Motivation to choose a Coffee Store as Project?**
+  
+ After having worked creating two stores with Prestashop and Wordpress without programming. This project seemed practical, useful and an interesting experience for a junior developer.
 
-- **The main challenge of making a Headless CMS store with Shopify.**
+ -  **A subscription model store.**
 
-        Without a doubt the worst thing has been to start knowing the connection         processes     with GraphQL, the conventional queries that we had seen did not         work here.
+The real interest of my project was not to have a large list of products that would require me a lot of time just to be able to describe and complete them.
+The idea of this business is simple, collect coffees from small businesses and turn it into a subscription model that allows me to make them known to them, and generate a business of discovery of new gourmet products.
 
-- **A subscription model store.**
+-   **The main challenge of making a Headless CMS store with Shopify.**
 
-        The real interest of my project was not to have a large list of products that would         require me a lot of time just to be able to describe and complete them.
-        The idea of this business is simple, collect coffees from small businesses and turn         it into a subscription model that allows me to make them known to them, and         generate a business of discovery of new gourmet products.
+Without a doubt the worst thing has been to start knowing the connection processes with 🔥GraphQL, the conventional queries that we had seen did not work here.
 
--  **Blipp Dependency Backend Endpoints**
+The lack of "simple" documentation put me in some trouble to deal with the connection between our Backend and Shopify's StorefrontApi. 
+
+
+-   **Installation and deployment Guide.**
+
+Installation and deployment Guide.
+To install the project you only have to go to the repository https://github.com/AlfonsoValle/CafesElSibarita , clone it and run a yarn run dev.
+
+-   **Acknowledgments.**
+  
+This project would not have worked without the mentorship of @Boyander as the head of Core Code School's FullStack Bootcamp and my colleague @Systrent, without him and the endless hours of trial and error this website would work much worse.
+
+-   **Blipp Dependency Backend Endpoints.**
 
 ```
 �️  Routes:
@@ -38,7 +87,7 @@ GET     /sub/checkout02
 HEAD    /sub/checkout02
 ```
 
-- **Backend Schema**
+-   **Backend Schema.**
 
 ```
 ├───📁 src/
@@ -64,7 +113,7 @@ HEAD    /sub/checkout02
 └───📄 yarn.lock
 ```
 
-- **Backend ShopifyApp**
+-   **Backend ShopifyApp.**
 
 ```
 import { FastifyPluginAsync } from "fastify";
@@ -81,7 +130,7 @@ export const ShopifyApp: FastifyPluginAsync = async (app) => {
 };
 ```
 
-- **Backend Single Product GraphQL Query**
+-   **Backend Single Product GraphQL Query.**
 
 ```
 import Shopify from "@shopify/shopify-api";
@@ -147,7 +196,7 @@ export const SingleProductQuery: FastifyPluginAsync = async (app) => {
 };
 ```
 
-- **Frontend Schema**
+-   **Frontend Schema**
 
 ```
 ├───📁 components/
@@ -223,10 +272,10 @@ export const SingleProductQuery: FastifyPluginAsync = async (app) => {
 │   └───📄 _document.tsx
 ├───📁 public/
 │   └───📁 images/
-│       ├───📄 23.jpg
-│       ├───📄 24.jpg
-│       ├───📄 33.png
-│       ├───📄 34.png
+│       ├───📄 Fondo23.jpg
+│       ├───📄 Fondo24.jpg
+│       ├───📄 Fondo33.png
+│       ├───📄 Fondo34.png
 │       ├───📄 cafetera.jpg
 │       ├───📄 coffee-bag-svgrepo-com.svg
 │       ├───📄 decorativo.png
@@ -252,7 +301,7 @@ export const SingleProductQuery: FastifyPluginAsync = async (app) => {
 └───📄 yarn.lock
 ```
 
-- **Frontend Speciality Crud**
+-   **Frontend Delete Speciality Crud**
 
 ```
 import { css } from "@emotion/react";
