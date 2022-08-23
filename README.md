@@ -9,7 +9,7 @@
 
 <div align="center" >
 
-## **Indication of the Technologies Used**
+## **Technologies Used**
 <br>
 
 ![Esta es una imagen](https://img.shields.io/badge/-YARN-brightgreen?style=plastic)
@@ -42,32 +42,32 @@
 
 </div>
 
--   **Motivation to choose a Coffee Store as Project?**
+ - ### **Motivation to choose a Coffee Store as Project?**
   
  After having worked creating two stores with Prestashop and Wordpress without programming. This project seemed practical, useful and an interesting experience for a junior developer.
 
- -  **A subscription model store.**
+ -  ###   **A subscription model store.**
 
 The real interest of my project was not to have a large list of products that would require me a lot of time just to be able to describe and complete them.
 The idea of this business is simple, collect coffees from small businesses and turn it into a subscription model that allows me to make them known to them, and generate a business of discovery of new gourmet products.
 
--   **The main challenge of making a Headless CMS store with Shopify.**
+-  ###    **The main challenge of making a Headless CMS store with Shopify.**
 
 Without a doubt the worst thing has been to start knowing the connection processes with 🔥GraphQL, the conventional queries that we had seen did not work here.
 
 The lack of "simple" documentation put me in some trouble to deal with the connection between our Backend and Shopify's StorefrontApi. 
 
 
--   **Installation and deployment Guide.**
+-  ###    **Installation and deployment Guide.**
 
 Installation and deployment Guide.
 To install the project you only have to go to the repository https://github.com/AlfonsoValle/CafesElSibarita , clone it and run a yarn run dev.
 
--   **Acknowledgments.**
+-  ###    **Acknowledgments.**
   
 This project would not have worked without the mentorship of @Boyander as the head of Core Code School's FullStack Bootcamp and my colleague @Systrent, without him and the endless hours of trial and error this website would work much worse.
 
--   **Blipp Dependency Backend Endpoints.**
+-  ###    **Blipp Dependency Backend Endpoints.**
 
 ```
 �️  Routes:
@@ -87,7 +87,7 @@ GET     /sub/checkout02
 HEAD    /sub/checkout02
 ```
 
--   **Backend Schema.**
+-  ###   **Backend Schema.**
 
 ```
 ├───📁 src/
@@ -113,7 +113,7 @@ HEAD    /sub/checkout02
 └───📄 yarn.lock
 ```
 
--   **Backend ShopifyApp.**
+-  ###   **Backend ShopifyApp.**
 
 ```
 import { FastifyPluginAsync } from "fastify";
@@ -130,7 +130,7 @@ export const ShopifyApp: FastifyPluginAsync = async (app) => {
 };
 ```
 
--   **Backend Single Product GraphQL Query.**
+-  ###   **Backend Single Product GraphQL Query.**
 
 ```
 import Shopify from "@shopify/shopify-api";
@@ -196,7 +196,7 @@ export const SingleProductQuery: FastifyPluginAsync = async (app) => {
 };
 ```
 
--   **Frontend Schema**
+-  ###    **Frontend Schema.**
 
 ```
 ├───📁 components/
@@ -301,7 +301,7 @@ export const SingleProductQuery: FastifyPluginAsync = async (app) => {
 └───📄 yarn.lock
 ```
 
--   **Frontend Delete Speciality Crud**
+-  ###   **Frontend Delete Speciality Crud.**
 
 ```
 import { css } from "@emotion/react";
