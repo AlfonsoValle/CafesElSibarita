@@ -1,0 +1,114 @@
+{
+  "path": "C:/Program Files/Git/",
+  "name": "Git",
+  "children": [
+    {
+      "path": "C:\\Program Files\\Git\\.BUILDINFO",
+      "name": ".BUILDINFO",
+      "type": "file",
+      "extension": ""
+    },
+    {
+      "path": "C:\\Program Files\\Git\\.INSTALL",
+      "name": ".INSTALL",
+      "type": "file",
+      "extension": ""
+    },
+    {
+      "path": "C:\\Program Files\\Git\\.MTREE",
+      "name": ".MTREE",
+      "type": "file",
+      "extension": ""
+    },
+    {
+      "path": "C:\\Program Files\\Git\\.PKGINFO",
+      "name": ".PKGINFO",
+      "type": "file",
+      "extension": ""
+    },
+    {
+      "path": "C:\\Program Files\\Git\\bin",
+      "name": "bin",
+      "type": "directory"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\cmd",
+      "name": "cmd",
+      "type": "directory"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\dev",
+      "name": "dev",
+      "type": "directory"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\etc",
+      "name": "etc",
+      "type": "directory"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\git-bash.exe",
+      "name": "git-bash.exe",
+      "type": "file",
+      "extension": ".exe"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\git-cmd.exe",
+      "name": "git-cmd.exe",
+      "type": "file",
+      "extension": ".exe"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\install.sh",
+      "name": "install.sh",
+      "type": "file",
+      "extension": ".sh"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\LICENSE.txt",
+      "name": "LICENSE.txt",
+      "type": "file",
+      "extension": ".txt"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\mingw64",
+      "name": "mingw64",
+      "type": "directory"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\ReleaseNotes.html",
+      "name": "ReleaseNotes.html",
+      "type": "file",
+      "extension": ".html"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\tmp",
+      "name": "tmp",
+      "type": "directory"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\unins000.dat",
+      "name": "unins000.dat",
+      "type": "file",
+      "extension": ".dat"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\unins000.exe",
+      "name": "unins000.exe",
+      "type": "file",
+      "extension": ".exe"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\unins000.msg",
+      "name": "unins000.msg",
+      "type": "file",
+      "extension": ".msg"
+    },
+    {
+      "path": "C:\\Program Files\\Git\\usr",
+      "name": "usr",
+      "type": "directory"
+    }
+  ],
+  "type": "directory"
+}

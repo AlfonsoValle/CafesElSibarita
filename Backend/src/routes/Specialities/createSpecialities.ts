@@ -11,10 +11,9 @@ export const createSpecialities: FastifyPluginAsync = async (app) => {
 	}>("/createSpecialities", async (req, res) => {
 		const data = req.body;
 		req.log.info("Output");
-		const {name, text, image } = data;
+		const { name, text, image } = data;
 
 		const doc = await specialityModel.create({
-			
 			name,
 			text,
 			image,

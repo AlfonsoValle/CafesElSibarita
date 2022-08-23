@@ -15,5 +15,3 @@ export const deleteSpecialities: FastifyPluginAsync = async (app) => {
 
 
 
-
-

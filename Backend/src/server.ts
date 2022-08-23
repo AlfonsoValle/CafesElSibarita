@@ -13,6 +13,7 @@ const server: FastifyInstance = fastify({
 			},
 		},
 	},
+	disableRequestLogging: true,
 });
 
 server.register(blipp);
