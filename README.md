@@ -65,7 +65,7 @@ To install the project you only have to go to the repository https://github.com/
 
 -  ###    **Acknowledgments.**
   
-This project would not have worked without the mentorship of @Boyander as the head of Core Code School's FullStack Bootcamp and my colleague @Systrent, without him and the endless hours of trial and error this website would work much worse.
+This project would not have worked without the mentorship of [@Boyander](https://github.com/Boyander) as the head of Core Code School's FullStack Bootcamp and my colleague [@Systrent](https://github.com/Systrent), without him and the endless hours of trial and error this website would work much worse.
 
 -  ###    **Blipp Dependency Backend Endpoints.**
 
