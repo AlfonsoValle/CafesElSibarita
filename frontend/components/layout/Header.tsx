@@ -1,8 +1,8 @@
 import { css } from "@emotion/react";
 import { MainMenu } from "./MainMenu";
 import { LateralMenu } from "./LateralMenu";
-import { TokenApp } from "../shared/TokenApp";
-import { BotonHeader } from "../tailwind components/BotonHeader";
+import { TokenApp } from "../Shared/TokenApp";
+import { BotonHeader } from "../Shared/BotonHeader";
 
 export const Header = () => {
 	return (
@@ -35,7 +35,13 @@ export const Header = () => {
 						`}
 					>
 						<BotonHeader text="Sobre Nosotros" href="/sobrenosotros" />
-						<BotonHeader text="Editar Especialidades" href="/editarespecialidades" />
+
+						<div>
+							<BotonHeader
+								text="Editar Especialidades"
+								href="/editarespecialidades"
+							/>
+						</div>
 					</div>
 					<div
 						css={css`

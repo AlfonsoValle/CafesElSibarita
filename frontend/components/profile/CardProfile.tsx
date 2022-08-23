@@ -4,9 +4,9 @@ import { PerfilCrud } from "./CrudProfile";
 import useSWR from "swr";
 import { AuthenticatedFetcher } from "../../lib/AuthenticatedFetcher";
 import { useAuth0 } from "@auth0/auth0-react";
-import { AuthenticatedApp } from "../shared/AuthenticatedApp";
+import { AuthenticatedApp } from "../Shared/AuthenticatedApp";
 import { useToken } from "../../lib/tokencontext";
-import { Spinner } from "../shared/Spinner";
+import { Spinner } from "../Shared/Spinner";
 
 export const CardProfile = () => {
 	const { Auth0Token } = useToken();

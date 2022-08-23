@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import Socials from "../home/Socials";
+import Socials from "../home/Footer/Socials";
 import AboutUs from "../home/About";
 
 export const Footer = () => {

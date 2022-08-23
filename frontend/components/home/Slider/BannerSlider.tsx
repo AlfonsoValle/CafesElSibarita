@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 import useSWR from "swr";
-import { Spinner } from "../../shared/Spinner";
+import { Spinner } from "../../Shared/Spinner";
 
 const BannerSlider: React.FC = () => {
 	const { data } = useSWR("especialidades/readSpecialities");

@@ -1,12 +1,11 @@
 import { css } from "@emotion/react";
-import { useState } from "react";
 import useSWR from "swr";
 import { DeleteSpeciality } from "../../lib/SpecialityRepo";
-import { Spinner } from "../shared/Spinner";
+import { Spinner } from "../Shared/Spinner";
 import { EspecialidadCard } from "./EspecialidadCard";
 
 export const ListaEspecialidades: React.FC = () => {
-	const { data, mutate } = useSWR("especialidades/readSpecialities", {
+	const { data, mutate } = useSWR("/especialidades/readSpecialities", {
 		refreshInterval: 800,
 	});
 

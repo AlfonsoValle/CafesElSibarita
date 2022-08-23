@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import { CrearEspecialidades } from "../../components/Admin/CreateSpeciality";
 import { useEffect, useRef } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import { AuthenticatedApp } from "../../components/shared/AuthenticatedApp";
+import { AuthenticatedApp } from "../../components/Shared/AuthenticatedApp";
 import { BorrarEspecialidades } from "../../components/Admin/DeleteSpeciality";
 
 const CrudEspecialidades = () => {

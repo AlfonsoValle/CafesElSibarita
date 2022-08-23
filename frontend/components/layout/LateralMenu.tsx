@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import ShoppingCart from "./ShoppingCart";
+
 import { Login } from "./Login";
 
 export const LateralMenu = () => {

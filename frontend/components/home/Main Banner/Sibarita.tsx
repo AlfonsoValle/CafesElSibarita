@@ -23,8 +23,9 @@ const Sibarita: React.FC<NameDescriptionRoute> = ({ name, description, href }) =
 						rgba(64, 48, 1, 1) 140%
 					);
 					border: 2px solid #eaecebc5;
+					border-left: 0px;
 					border-radius: 0px 0px 40px 0px;
-					clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 9% 50%);
+					clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 3% 50%);
 				`}
 			>
 				<div

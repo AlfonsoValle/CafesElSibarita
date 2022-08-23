@@ -2,8 +2,6 @@ import { useForm } from "react-hook-form";
 import { Botonformulario } from "./Botondeformulario";
 import { css } from "@emotion/react";
 import { CreateSpeciality } from "../../lib/SpecialityRepo";
-import { useState } from "react";
-import tw from "twin.macro";
 
 const Pais = [
 	{ code: "AD", pais: "Andorra" },
@@ -249,7 +247,6 @@ const Pais = [
 ];
 
 export const CrearEspecialidades = () => {
-	
 	const {
 		register,
 		handleSubmit,
@@ -294,7 +291,7 @@ export const CrearEspecialidades = () => {
 				`}
 			>
 				{" "}
-				Introduce una Nueva Especialidad{" "}
+				Introduce una Nueva Especialidad
 			</h1>
 			<div
 				css={css`
@@ -365,7 +362,7 @@ export const CrearEspecialidades = () => {
 					`}
 				>
 					<Botonformulario onClick={submit} variant={isSubmitted ? "done" : "pending"}>
-						Guardar Especialidad "{name}"
+						Guardar Especialidad {name?.length > 0 ? `☕${name}` : ""}
 					</Botonformulario>
 				</div>
 			</div>

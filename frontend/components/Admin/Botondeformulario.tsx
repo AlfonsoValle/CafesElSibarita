@@ -1,9 +1,4 @@
-import tw from "twin.macro"
-
-
-
 export const Botonformulario: React.FC<{
-
 	variant?: "done" | "pending";
 	children: any;
 	onClick?: any;
@@ -12,8 +7,7 @@ export const Botonformulario: React.FC<{
 	return (
 		<button
 			type="button"
-			
-			onClick={onClick}
+			onClick={() => variant != "done" && onClick()}
 			disabled={variant == "done"}
 		>
 			{children}

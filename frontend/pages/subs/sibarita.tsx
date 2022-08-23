@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { SubSibarita } from "../../components/home/ShopySubSibarita";
+import { SubSibarita } from "../../components/home/Shopify/ShopySubSibarita";
 
 const SuscripcionSibarita = () => {
 	return (

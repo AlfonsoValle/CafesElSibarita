@@ -1,6 +1,5 @@
 import { css } from "@emotion/react";
 import { useAuth0 } from "@auth0/auth0-react";
-import axios from "axios";
 
 export const Login = () => {
 	const { loginWithRedirect, user, logout } = useAuth0();
@@ -15,31 +14,31 @@ export const Login = () => {
 				<span
 					onClick={() => loginWithRedirect()}
 					css={css`
-							display: flex;
-							align-content: center;
-							color: #f0ebe7;
-							font-weight: 400;
-							font-family: "Montserrat", sans-serif;
-							font-size: 15px;
-							height: 25px;
-							padding-bottom: 6px;
-							padding-left: 20px;
-							padding-right: 22px;
-							border-radius: 24px;
-							border-radius: 24px;
-							text-decoration: none;
-							border: 1px solid #eaecebc5;
-							background-color: #c28836d8;
-							padding: 6px 10px 6px 10px;
-							justify-content: center;
-							align-items: center;
-							text-align: start;
-							:hover {
-								background-color: #034d0ace;
-							}
+						display: flex;
+						align-content: center;
+						color: #f0ebe7;
+						font-weight: 400;
+						font-family: "Montserrat", sans-serif;
+						font-size: 15px;
+						height: 25px;
+						padding-bottom: 6px;
+						padding-left: 20px;
+						padding-right: 22px;
+						border-radius: 24px;
+						border-radius: 24px;
+						text-decoration: none;
+						border: 1px solid #eaecebc5;
+						background-color: #c28836d8;
+						padding: 6px 10px 6px 10px;
+						justify-content: center;
+						align-items: center;
+						text-align: start;
+						:hover {
+							background-color: #034d0ace;
+						}
 
-							cursor: pointer;
-						`}
+						cursor: pointer;
+					`}
 				>
 					Identifícate
 				</span>
@@ -62,7 +61,6 @@ export const Login = () => {
 							align-items: center;
 							text-align: start;
 							white-space: nowrap;
-							
 						`}
 					>
 						Bienvenid@ - {user.nickname}

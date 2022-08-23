@@ -22,7 +22,7 @@ const Prime: React.FC<NameDescriptionRoute> = ({ name, description, href }) => {
 					border-right: 0px;
 					padding-bottom: 9px;
 					border-radius: 0px 0px 0px 40px;
-					clip-path: polygon(0% 0%, 91% 0, 100% 50%, 91% 100%, 0% 100%);
+					clip-path: polygon(0% 0%, 97% 0, 100% 50%, 97% 100%, 0% 100%);
 					cursor: pointer;
 				`}
 			>

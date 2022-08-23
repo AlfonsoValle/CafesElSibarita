@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { SubPrime } from "../../components/home/ShopySubPrime";
+import { SubPrime } from "../../components/home/Shopify/ShopySubPrime";
 
 const SuscripcionPrime = () => {
 	return (

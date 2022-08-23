@@ -1,16 +1,16 @@
 import { CafeCard } from "./ShopyCafeCard";
 import { css } from "@emotion/react";
 import useSWR from "swr";
-import { Spinner } from "../shared/Spinner";
-import { CheckoutPrime } from "../subs/CheckoutPrime";
+import { Spinner } from "../../Shared/Spinner";
+import { CheckoutSibarita } from "../../Subscriptions/CheckoutSibarita";
 
-export const SubPrime = () => {
-	const { data } = useSWR("/sub/single?handle=suscripcion-prime", {
+export const SubSibarita = () => {
+	const { data } = useSWR("/sub/single?handle=suscripcion-sibarita", {
 		refreshInterval: 5000,
 	});
 
 	const cafeData = data?.data.productByHandle;
-	const variantIdPrime = cafeData?.variants.edges[0].node.id;
+	const variantIdSibarita = cafeData?.variants.edges[0].node.id;
 	console.log(cafeData);
 	return (
 		<div
@@ -35,7 +35,7 @@ export const SubPrime = () => {
 		>
 			{cafeData != undefined ? (
 				<CafeCard cafe={cafeData}>
-					<CheckoutPrime variantId={variantIdPrime} />
+					<CheckoutSibarita variantId={variantIdSibarita} />
 				</CafeCard>
 			) : (
 				<Spinner />

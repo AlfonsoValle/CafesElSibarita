@@ -1,9 +1,9 @@
 import { css } from "@emotion/react";
-import MainBanner from "./MainBanner";
-import Prime from "./Prime";
-import Sibarita from "./Sibarita";
-import BannerSlider from "././newslider/BannerSlider";
-import MainHeaderText from "./MainHeaderText";
+import MainBanner from "./Main Banner/MainBanner";
+import Prime from "./Main Banner/Prime";
+import Sibarita from "./Main Banner/Sibarita";
+import BannerSlider from "./Slider/BannerSlider";
+import MainHeaderText from "./MainHeadText";
 
 
 const Section = () => {
