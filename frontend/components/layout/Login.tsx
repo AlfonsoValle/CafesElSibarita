@@ -62,9 +62,7 @@ export const Login = () => {
 							text-align: start;
 							white-space: nowrap;
 						`}
-					>
-						Bienvenid@ - {user.nickname}
-					</p>
+					></p>
 					<button
 						onClick={() => logout({ returnTo: window.location.origin })}
 						css={css`
@@ -75,6 +73,7 @@ export const Login = () => {
 							font-family: "Montserrat", sans-serif;
 							font-size: 15px;
 							height: 25px;
+							padding-top: 6px;
 							padding-bottom: 6px;
 							padding-left: 20px;
 							padding-right: 22px;
@@ -94,7 +93,7 @@ export const Login = () => {
 							cursor: pointer;
 						`}
 					>
-						Salir
+						{user.nickname} | Salir
 					</button>
 				</div>
 			)}

@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { AboutUsText } from "../../components/Texts/AboutUsText";
+import { AboutUsText } from "../../components/about/AboutUsText";
 const SobreNosotros = () => {
 	return (
 		<section

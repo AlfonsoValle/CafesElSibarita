@@ -237,7 +237,7 @@ const Pais = [
 	{ code: "VE", pais: "Venezuela" },
 	{ code: "VG", pais: "Islas Vírgenes Británicas" },
 	{ code: "VI", pais: "Islas Vírgenes de los Estados Unidos de América" },
-	{ code: "VN", pais: "Vietnam" },
+	{ code: "vn", pais: "Vietnam" },
 	{ code: "VU", pais: "Vanuatu" },
 	{ code: "WF", pais: "Wallis y Futuna" },
 	{ code: "WS", pais: "Samoa" },
@@ -255,8 +255,11 @@ export const CrearEspecialidades = () => {
 	} = useForm();
 	const name = watch("name");
 	const text = watch("text");
+
 	const Preimage = Pais.find((bandera) => bandera.pais === name);
-	const image = `https://countryflagsapi.com/svg/${Preimage?.code}`;
+	const Code = Preimage?.code.toLowerCase();
+	//const image = `https://countryflagsapi.com/svg/${Preimage?.code}`;
+	const image = `https://flagcdn.com/${Code}.svg`;
 
 	const submit = async () => {
 		await CreateSpeciality({ name, text, image });

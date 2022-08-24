@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import useSWR from "swr";
 import { DeleteSpeciality } from "../../lib/SpecialityRepo";
-import { Spinner } from "../Shared/Spinner";
+import { Spinner } from "../shared/Spinner";
 import { EspecialidadCard } from "./EspecialidadCard";
 
 export const ListaEspecialidades: React.FC = () => {

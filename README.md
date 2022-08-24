@@ -17,6 +17,7 @@
 
 
 ![Esta es una imagen](https://img.shields.io/badge/-NEXT.JS-inactive?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-MONGODB-success?style=plastic)
 ![Esta es una imagen](https://img.shields.io/badge/-FASTIFY-orange?style=plastic)
 ![Esta es una imagen](https://img.shields.io/badge/-REACT-critical?style=plastic)
 ![Esta es una imagen](https://img.shields.io/badge/-TYPESCRIPT-blue?style=plastic)
@@ -32,7 +33,7 @@
 ![Esta es una imagen](https://img.shields.io/badge/-NODEMON-critical?style=plastic)
 ![Esta es una imagen](https://img.shields.io/badge/-SHOPIFY-brightgreen?style=plastic)
 ![Esta es una imagen](https://img.shields.io/badge/-GRAPHQL-important?style=plastic)
-![Esta es una imagen](https://img.shields.io/badge/-MONGODB-success?style=plastic)
+![Esta es una imagen](https://img.shields.io/badge/-MONGOOSE-success?style=plastic)
 ![Esta es una imagen](https://img.shields.io/badge/-AUTH0-darkgrey?style=plastic)
 ![Esta es una imagen](https://img.shields.io/badge/-AXIOS-blue?style=plastic)
 ![Esta es una imagen](https://img.shields.io/badge/-SWR-blue?style=plastic)

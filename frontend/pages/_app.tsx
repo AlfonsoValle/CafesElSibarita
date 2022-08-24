@@ -5,6 +5,7 @@ import { PublicFetcher } from "../lib/PublicFetcher";
 import Head from "next/head";
 import { AppProps } from "next/app";
 import { GlobalStyles } from "twin.macro";
+import { TokenApp } from "../components/shared/TokenApp";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 	const origin = useMemo(() => {
@@ -14,7 +15,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 	}, []);
 
 	return (
-		<>
+		<TokenApp>
 			<GlobalStyles />
 			<SWRConfig value={{ fetcher: PublicFetcher }}>
 				<Head>
@@ -25,7 +26,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					<Component {...pageProps} />
 				</Layout>
 			</SWRConfig>
-		</>
+		</TokenApp>
 	);
 };
 

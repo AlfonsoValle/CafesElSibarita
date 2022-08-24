@@ -3,7 +3,7 @@ import { FastifyPluginAsync } from "fastify";
 import { STOREFRONT, SHOPIFY_SHOP } from "../../config";
 
 export const AllProducts: FastifyPluginAsync = async (app) => {
-	app.get("/", async (req, res) => {
+	app.get("/list", async (req, res) => {
 		const storefrontClient: any = new Shopify.Clients.Storefront(SHOPIFY_SHOP, STOREFRONT);
 		try {
 			const products: any = await storefrontClient.query({

@@ -1,8 +1,8 @@
 import { CafeCard } from "./ShopyCafeCard";
 import { css } from "@emotion/react";
 import useSWR from "swr";
-import { Spinner } from "../../Shared/Spinner";
-import { CheckoutSibarita } from "../../Subscriptions/CheckoutSibarita";
+import { Spinner } from "../../shared/Spinner";
+import { CheckoutSibarita } from "../../subscriptions/CheckoutSibarita";
 
 export const SubSibarita = () => {
 	const { data } = useSWR("/sub/single?handle=suscripcion-sibarita", {

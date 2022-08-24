@@ -1,8 +1,8 @@
 import { CafeCard } from "./ShopyCafeCard";
 import { css } from "@emotion/react";
 import useSWR from "swr";
-import { Spinner } from "../../Shared/Spinner";
-import { CheckoutPrime } from "../../Subscriptions/CheckoutPrime";
+import { Spinner } from "../../shared/Spinner";
+import { CheckoutPrime } from "../../subscriptions/CheckoutPrime";
 
 export const SubPrime = () => {
 	const { data } = useSWR("/sub/single?handle=suscripcion-prime", {

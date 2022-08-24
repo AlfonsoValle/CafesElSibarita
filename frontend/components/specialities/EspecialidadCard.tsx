@@ -1,7 +1,6 @@
 import { css } from "@emotion/react";
 
-export const EspecialidadCard = (item, onDelete) => {
-	console.log(item.item._id);
+export const EspecialidadCard = (item) => {
 	return (
 		<div
 			css={css`

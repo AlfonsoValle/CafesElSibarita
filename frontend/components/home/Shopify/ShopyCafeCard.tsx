@@ -13,7 +13,6 @@ export const CafeCard: React.FC<{ cafe: any; children: any }> = ({ cafe, childre
 				height: 100%;
 				width: 100%;
 				display: flex;
-
 				justify-content: space-around;
 				align-items: center;
 				color: white;
