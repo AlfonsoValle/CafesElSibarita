@@ -6,9 +6,9 @@
 
 </div> 
 <br>
-<img title="" src="https://i.gyazo.com/8ac811de756ee554b30467602c05e0fe.jpg" alt="CapturaImagenVideoExposicionSibarita" width="800">
 
-[![IMAGE ALT TEXT HERE](https://i.gyazo.com/8ac811de756ee554b30467602c05e0fe.jpg)](https://www.youtube.com/watch?v=watch?v=SVz6cOqeYoc)
+
+[![IMAGE ALT TEXT HERE](https://i.gyazo.com/8ac811de756ee554b30467602c05e0fe.jpg)](https://www.youtube.com/watch?v=SVz6cOqeYoc)
 
 
 <div align="center" >
