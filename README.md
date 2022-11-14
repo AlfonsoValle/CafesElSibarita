@@ -46,7 +46,7 @@
 ![Esta es una imagen](https://img.shields.io/badge/POWERED%20BY-CAFFEINE-orange?style=for-the-badge)
 
 </div>
-
+</div>
  - ### **Motivation to choose a Coffee Store as Project?**
   
  After having worked creating two stores with Prestashop and Wordpress without programming. This project seemed practical, useful and an interesting experience for a junior developer.
